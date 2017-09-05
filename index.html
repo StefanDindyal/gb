@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en" ><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="https://sandbox-cdn4.gonebusy.com/assets/favicon-8d865c7995bfe501f272aab7f8842d1b.ico" />
+  <link rel="apple-touch-icon" type="image/png" href="https://sandbox-cdn1.gonebusy.com/assets/gb-icon-144x144-7e1d8204f893cdcd4d54a6aa3d8240d0.png" />
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
+    rel="stylesheet"
+    integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1"
+    crossorigin="anonymous">
+  <link rel="stylesheet" media="all" href="https://sandbox-cdn4.gonebusy.com/assets/application-649e77b4c03715d935aa4e2e223aee05.css" />
+  <script src="https://sandbox-cdn3.gonebusy.com/assets/modernizr-bc7041c14269fe14a215b4b72415081b.js"></script>
+<!--[if lt IE 9]>
+  <script src="https://sandbox-cdn1.gonebusy.com/assets/html5shiv-723836c3908be49a77fabf4d72b303e7.js"></script>
+  <script src="https://sandbox-cdn3.gonebusy.com/assets/respond.min-50185df977f4a395efd4ba7315e5dfe7.js"></script>
+<![endif]-->
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="Vz6rx7ySJTdZ4k4qkCx/I6mP530pu0Kx9Pili1xLTkXLVMY+P+sf1kFrPDj/VBDNP+dOCEJpI3rBAPS1/hBtjQ==" />
+  
+    <title>Gonebusy</title>
+  <base href="/">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"/>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-61437504-3', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+</head>
+<body >
+     <div class="off-canvas-wrap" data-offcanvas>
+       <div class="inner-wrap">
+         <aside class="right-off-canvas-menu">
+           <ul class="off-canvas-list">
+               <li><a href="/slack">Slack</a></li>
+               <li><a href="/pricing">Pricing</a></li>
+               <li><a href="https://gonebusy.github.io">Developers</a></li>
+               <li><a href="/support/getting_started/">Support</a></li>
+               <li><a title='Login' data-reveal-id='login-modal'>Login</a></li>
+               <li><a title='Get Started' class='button radius' data-reveal-id='signup-modal'>Get Started</a></li>
+               
+               <li><div class="off-canvas-sub-footer"><img alt="Gonebusy" src="https://sandbox-cdn3.gonebusy.com/assets/GonebusyFullLogo-inv-29394badbf30d2c7ff2ec4860e5a60ce.svg" /></div></li>
+               <li class="off-canvas-footer"><a target="_blank" href="/privacy_policy">Privacy Policy</a> | <a target="_blank" href="/terms_and_conditions">Terms &amp; Conditions</a></li>
+           </ul>
+         </aside>
+
+         <nav class="top-bar hide-for-medium-up" data-topbar role="navigation">
+           <section class="left">
+             <a id="logo-box-small" class="logo-small hidetext" href="/">
+               <img alt="Gonebusy" src="https://sandbox-cdn3.gonebusy.com/assets/GonebusyFullLogo-inv-29394badbf30d2c7ff2ec4860e5a60ce.svg" />
+</a>           </section>
+
+           <section class="middle top-bar-section hide-for-small">
+           </section>
+
+           <section class="right-small">
+             <a class="right-off-canvas-toggle">
+               <div>
+                 <p class="nav-icon"><i class="fa fa-bars"></i></p>
+               </div>
+             </a>
+           </section>
+         </nav>
+
+         <a class="exit-off-canvas"></a>
+
+         <div class="fixed contain-to-grid show-for-medium-up header">
+           <div class="row top-desktop-row">
+             <div class="small-12 columns">
+               <nav class="top-bar show-for-medium-up" data-topbar role="navigation">
+                 <ul class="title-area">
+                   <li class="name">
+                     <a class="logo hidetext" href="/">
+                       <img alt="Gonebusy" src="https://sandbox-cdn3.gonebusy.com/assets/GonebusyFullLogo-inv-29394badbf30d2c7ff2ec4860e5a60ce.svg" />
+</a>                   </li>
+                 </ul>
+
+                 <section id="topNav" class="top-bar-section">
+                   <!-- Right Nav section -->
+                   <ul class="right">
+                       <li><a href="/slack">Slack</a></li>
+                       <li><a href="/pricing">Pricing</a></li>
+                       <li class= ><a href="https://gonebusy.github.io" class="clickable">Developers</a></li>
+                       <li class= ><a class="clickable" href="/support/getting_started/">Support</a></li>
+                       <li><a title='Login' class='clickable' data-reveal-id='login-modal'>Login</a></li>
+                       <li><a title='Get Started' class='clickable button radius' data-reveal-id='signup-modal'>Get Started</a></li>
+                   </ul>
+
+                   <!-- Left Nav section -->
+                   <ul class="left">
+                   </ul>
+                 </section>
+               </nav>
+             </div>
+           </div>
+         </div><!-- contain-to-grid header-->
+
+         <div id='signup-modal' class='signup reveal-modal medium' data-reveal aria-labelledby="signupTitle" aria-hidden="true" role="dialog">
+           <div class="row no-left-margin">
+  <div class="small-12 small-centered text-center columns">
+    <div class="row">
+      <div class="small-12 small-centered text-center columns titlebar">
+        <h2 id='loginTitle'>Sign Up</h2>
+        <h3>It's free.  It's easy.<br>Currently only for API customers.</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="small-10 small-centered text-center columns">
+        <form id="emailSignupForm" action="emailSignupForm" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="Ccp0jkY6GwPGt41xsRT3fOUPkoHqdNbv4N9bRQqklOeVoBl3xUMh4t4+/2PebJiSc2c79IGmtyTVJwp7qP+3Lw==" />
+          <input type="email" name="email" id="email" class="form-control radius" placeholder="Enter a valid email address" maxlength="60" size="20" required="required" onKeyPress="return window.fakeOutEnterKey(event)" />
+          <input type="submit" name="commit" value="hiddenSubmit" id="hiddenSubmit" style="display:none;" />
+</form>        <div class="base">
+          <div class="log">
+            <a href='#' title='Continue' id="signupContinue" class="submit button radius">CONTINUE</a>
+          </div>
+        </div>
+        <div id="or-block">
+          <span>or link an existing account</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="small-9 medium-5 push-1 small-centered medium-uncentered text-center columns">
+  <ul class="buttonsection">
+    <li>
+      <a class="btn btn-block btn-social btn-facebook font-btn button radius" href="/users/auth/facebook">
+        FACEBOOK
+        <i class="fa fa-facebook line_height line-height55"></i>
+</a>    </li>
+    <li>
+      <a class="btn btn-block btn-social btn-google-plus font-btn button radius" href="/users/auth/google">
+        GOOGLE
+        <i  class="fa fa-google font_15"></i>
+</a>    </li>
+  </ul>
+</div>
+<div class="small-9 medium-5 push-1 small-centered medium-uncentered text-center columns">
+  <ul class="buttonsection">
+    <li>
+      <a class="btn btn-block btn-social btn-twitter font-btn button radius" href="/users/auth/twitter">
+        TWITTER
+        <i  class="fa fa-twitter"></i>
+</a>    </li>
+    <li>
+      <a class="btn btn-block btn-social btn-github font-btn button radius" href="/users/auth/github">
+        GITHUB
+        <i  class="fa fa-github"></i>
+</a>    </li>
+  </ul>
+</div>
+<div class="small-12 text-center columns last">
+  <p>We never post anything anywhere without your consent.</p>
+</div>
+
+      </div>
+      <div class="row">
+        <span id="user-agreement">By signing up you agree to our <a target="_blank" href="/privacy_policy">Privacy Policy</a> and <a target="_blank" href="/terms_and_conditions">Terms &amp; Conditions</a></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+           <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+         </div>
+
+         <div id='signup-part-two-modal' class='signup reveal-modal medium' data-reveal aria-labelledby="signupTitle" aria-hidden="true" role="dialog">
+           <div class="image-overlay-content" style="display:none;">
+  <i class="fa fa-refresh fa-spin" style="font-size:24px"></i>
+</div>
+<div class="row no-left-margin">
+  <div class="small-12 small-centered text-center columns">
+    <div class="row">
+      <div class="small-12 small-centered text-center columns titlebar">
+        <h2 id='signupTitle'>Sign Up</h2>
+        <h3>Now choose a password.<br>You can always change it later.</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="small-10 small-centered text-center columns">
+        <form id="submitSignupForm" action="/users" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="yMYMEWHCZ8GvNMO4isUkT66kNjXZQ77oC4QL3MkU5NJUrGHo4rtdILe9sarlvUuhOMyfQLKR3yM+fFria0/HGg==" />
+          <input class="form-control radius" size="20" readonly="readonly" type="text" name="user[email]" id="user_email" />
+          <input class="form-control radius" placeholder="Password - 8 character minimum" maxlength="50" size="20" required="required" type="password" name="user[password]" id="user_password" />
+          <div class="base">
+            <div class="log">
+              <input type="submit" name="commit" value="Continue" class="submit button radius" />
+            </div>
+          </div>
+</form>        <div id="or-block">
+          <span>or link an existing account</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="small-9 medium-5 push-1 small-centered medium-uncentered text-center columns">
+  <ul class="buttonsection">
+    <li>
+      <a class="btn btn-block btn-social btn-facebook font-btn button radius" href="/users/auth/facebook">
+        FACEBOOK
+        <i class="fa fa-facebook line_height line-height55"></i>
+</a>    </li>
+    <li>
+      <a class="btn btn-block btn-social btn-google-plus font-btn button radius" href="/users/auth/google">
+        GOOGLE
+        <i  class="fa fa-google font_15"></i>
+</a>    </li>
+  </ul>
+</div>
+<div class="small-9 medium-5 push-1 small-centered medium-uncentered text-center columns">
+  <ul class="buttonsection">
+    <li>
+      <a class="btn btn-block btn-social btn-twitter font-btn button radius" href="/users/auth/twitter">
+        TWITTER
+        <i  class="fa fa-twitter"></i>
+</a>    </li>
+    <li>
+      <a class="btn btn-block btn-social btn-github font-btn button radius" href="/users/auth/github">
+        GITHUB
+        <i  class="fa fa-github"></i>
+</a>    </li>
+  </ul>
+</div>
+<div class="small-12 text-center columns last">
+  <p>We never post anything anywhere without your consent.</p>
+</div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+           <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+         </div>
+
+         <div id='login-modal' class='signup reveal-modal medium' data-reveal aria-labelledby="loginTitle" aria-hidden="true" role="dialog">
+           <div class="image-overlay-content" style="display:none;">
+  <i class="fa fa-refresh fa-spin" style="font-size:24px"></i>
+</div>
+<div class="row no-left-margin">
+  <div class="small-12 small-centered text-center columns">
+    <div class="row">
+      <div class="small-12 small-centered text-center columns titlebar">
+        <h2 id='loginTitle'>Log In</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="small-10 small-centered text-center columns">
+        <form novalidate="novalidate" class="simple_form user" action="/users/sign_in" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="2HOYBnVQ2Z1vLrYBgnoMM0Yv2pkO9m5MNHJVRtbvTHZEGfX/9injfHenxBPtAmPd0Edz7GUkD4cBigR4dLRvvg==" />
+          
+          <div class="input email required user_email"><input class="string email required form-control radius" maxlength="50" size="20" required="required" aria-required="true" placeholder="Email" type="email" name="user[email]" id="user_email" /></div>
+          <div class="input password required user_password"><input class="password required form-control radius" maxlength="50" size="20" required="required" aria-required="true" placeholder="Password - 8 character minimum" type="password" name="user[password]" id="user_password" /></div>
+          <div class="input boolean optional user_remember_me"><input value="false" type="hidden" name="user[remember_me]" /><label class="boolean optional control-label checkbox" for="user_remember_me"><input class="boolean optional radius" type="checkbox" value="true" checked="checked" name="user[remember_me]" id="user_remember_me" />Keep me logged in</label></div>
+          <div class="base">
+            <div class="log">
+              <input type="submit" name="commit" value="Let me in !" class="button submit button radius" />
+            </div>
+            <div class="forgot">
+              <a href='#' title='ForgotPassword' data-reveal-id='forgot-password-modal'>Forgot your password?</a>
+            </div>
+          </div>
+</form>      </div>
+    </div>
+    <div class="row">
+      <div class="small-9 medium-5 push-1 small-centered medium-uncentered text-center columns">
+  <ul class="buttonsection">
+    <li>
+      <a class="btn btn-block btn-social btn-facebook font-btn button radius" href="/users/auth/facebook">
+        FACEBOOK
+        <i class="fa fa-facebook line_height line-height55"></i>
+</a>    </li>
+    <li>
+      <a class="btn btn-block btn-social btn-google-plus font-btn button radius" href="/users/auth/google">
+        GOOGLE
+        <i  class="fa fa-google font_15"></i>
+</a>    </li>
+  </ul>
+</div>
+<div class="small-9 medium-5 push-1 small-centered medium-uncentered text-center columns">
+  <ul class="buttonsection">
+    <li>
+      <a class="btn btn-block btn-social btn-twitter font-btn button radius" href="/users/auth/twitter">
+        TWITTER
+        <i  class="fa fa-twitter"></i>
+</a>    </li>
+    <li>
+      <a class="btn btn-block btn-social btn-github font-btn button radius" href="/users/auth/github">
+        GITHUB
+        <i  class="fa fa-github"></i>
+</a>    </li>
+  </ul>
+</div>
+<div class="small-12 text-center columns last">
+  <p>We never post anything anywhere without your consent.</p>
+</div>
+
+    </div>
+  </div>
+</div>
+
+           <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+         </div>
+
+         <div id='forgot-password-modal' class='signup reveal-modal medium' data-reveal aria-labelledby="forgotPasswordTitle" aria-hidden="true" role="dialog">
+           <div class="image-overlay-content" style="display:none;">
+  <i class="fa fa-refresh fa-spin" style="font-size:24px"></i>
+</div>
+<div class="row no-left-margin">
+  <div class="small-12 small-centered text-center columns">
+    <div class="row">
+      <div class="small-12 small-centered text-center columns titlebar">
+        <h2 id='forgotPasswordTitle'>Recover Your Password</h2>
+        <h3>Please enter the email associated with your account.</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="small-10 small-centered text-center columns last">
+        <form novalidate="novalidate" class="simple_form user" action="/users/password" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="f9EN7ADbnJusx/51cK1Bj73J8QVKiW0XBLtZDayDQv7ju2AVg6KmerROjGcf1S5hK6FYcCFbDNwxQwgzDthhNg==" />
+          
+          <div class="field">
+            <div class="input email required user_email"><input class="string email required form-control radius" maxlength="50" size="20" required="required" aria-required="true" placeholder="Email" type="email" name="user[email]" id="user_email" /></div>
+            <input type="submit" name="commit" value="Reset my password" class="button submit button radius" />
+          </div>
+</form>      </div>
+    </div>
+  </div>
+</div>
+
+           <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+         </div>
+
+         <section id="cont" class="home" >
+           <div class="row">
+  <div id="alerts" class="small-12 columns">
+    <uib-alert ng-repeat="alert in alerts" type="{{alert.type}}" close="closeAlert(alert)" dismiss-on-timeout="{{alert.timeout}}" uib-collapse="alert.closed" ng-cloak>
+      <span ng-bind-html="alert.msg"></span>
+    </uib-alert>
+  </div>
+</div>
+
+           
+           
+<div class="row with-section show-for-medium-up">
+  <div class="small-12 small-centered columns my-collapse">
+    <div class="section" id="top-banner">
+      <p><b>Coming Soon!</b> Gonebusy's API-accessible platform <a href='#'>LEARN MORE<i class="fa fa-arrow-right"></i></a></p>
+    </div>
+  </div>
+</div>
+
+<div class="row with-section">
+  <div class="small-12 small-centered columns my-collapse">
+    <div class="section" id="section-1">
+      <div class="row with-section" id="section-1-row">
+        <div class="medium-6 medium-push-6 columns my-collapse">
+          <div class="row with-section">
+            <div class="small-12 small-centered medium-push-1 medium-uncentered columns small-top-margin-3x">
+              <div id="hero-icons"></div>
+            </div>
+          </div>
+        </div>
+        <div class="medium-6 medium-pull-6 columns my-collapse">
+          <div class="row with-section">
+            <div class="small-9 small-centered columns push-1 top-margin-9x">
+              <div id="getting-started">
+                <h1>Introducing Gonebusy for Slack</h1>
+                <div class="underline"></div>
+                <p><a title="GetStarted" class="submit button radius">Get Started</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row with-section section-2-background">
+  <div class="small-12 small-centered columns my-collapse">
+    <div class="section" id="section-2">
+      <div class="row with-section">
+        <div id="section-2-header">
+          <h2>Never leave Slack to work with your Google Calendar.</h2>
+        </div>
+        <div class="medium-8 medium-push-3 columns right-collapse">
+          <div class="row with-section">
+            <div id="screenshot">
+              <div id="featuresSlider" class="owl-carousel">
+                <img alt="screenshot" src="https://sandbox-cdn1.gonebusy.com/assets/TrelloTaco-60b9d1ec286437d232038b5f037b5f58.png" />
+                <img alt="screenshot" src="https://sandbox-cdn1.gonebusy.com/assets/TrelloTaco-60b9d1ec286437d232038b5f037b5f58.png" />
+                <img alt="screenshot" src="https://sandbox-cdn1.gonebusy.com/assets/TrelloTaco-60b9d1ec286437d232038b5f037b5f58.png" />
+                <img alt="screenshot" src="https://sandbox-cdn1.gonebusy.com/assets/TrelloTaco-60b9d1ec286437d232038b5f037b5f58.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="medium-2 medium-pull-9 columns left-collapse">
+          <div class="row with-section">
+            <div class="toggle-box">
+              <div class="toggle selected">
+                <div class="calendar-icon"></div>
+                <div class="toggle-title"><img src="gonebusy/img/calendar-icon.png" srcset="gonebusy/img/calendar-icon@2x.png 2x,gonebusy/img/calendar-icon@3x.png 3x" class="Calendar-Icon">Manage Schedules</div>
+                <div class="toggle-body"><div class="inner">Get to your Hangout links
+                quickly, move meetings around, clear your schedule for
+                the day and much more...</div></div>
+              </div>
+              <div class="toggle">
+                <div class="calendar-icon"></div>
+                <div class="toggle-title"><img src="gonebusy/img/book-icon.png"
+     srcset="gonebusy/img/book-icon@2x.png 2x,
+             gonebusy/img/book-icon@3x.png 3x"
+     class="Book-Icon">Book Conference Rooms</div>
+                <div class="toggle-body"><div class="inner">Get to your Hangout links
+                quickly, move meetings around, clear your schedule for
+                the day and much more...</div></div>
+              </div>
+              <div class="toggle">
+                <div class="calendar-icon"></div>
+                <div class="toggle-title"><img src="gonebusy/img/invite-icon.png"
+     srcset="gonebusy/img/invite-icon@2x.png 2x,
+             gonebusy/img/invite-icon@3x.png 3x"
+     class="Invite-Icon">Invite Colleagues</div>
+                <div class="toggle-body"><div class="inner">Get to your Hangout links
+                quickly, move meetings around, clear your schedule for
+                the day and much more...</div></div>
+              </div>
+              <div class="toggle">
+                <div class="calendar-icon"></div>
+                <div class="toggle-title"><img src="gonebusy/img/channels-icon.png"
+     srcset="gonebusy/img/channels-icon@2x.png 2x,
+             gonebusy/img/channels-icon@3x.png 3x"
+     class="Channels-Icon">Create Public Channels</div>
+                <div class="toggle-body"><div class="inner">Get to your Hangout links
+                quickly, move meetings around, clear your schedule for
+                the day and much more...</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row with-section">
+  <div class="small-12 small-centered columns my-collapse">
+    <div class="section" id="section-3">
+      <div class="row with-section">
+        <div id="section-3-header">
+          <h2>How does it work?</h2>
+        </div>
+        <div class="medium-8 medium-centered columns right-collapse">
+          <div class="row with-section">
+            <div id="screenshot">
+              <div id="howtoSlider" class="owl-carousel">
+                <img alt="screenshot" src="https://sandbox-cdn2.gonebusy.com/assets/how-it-works-step-4-0e072678419389b2e4521b425689c2cd.png" />
+                <img alt="screenshot" src="https://sandbox-cdn2.gonebusy.com/assets/how-it-works-step-4-0e072678419389b2e4521b425689c2cd.png" />
+                <img alt="screenshot" src="https://sandbox-cdn2.gonebusy.com/assets/how-it-works-step-4-0e072678419389b2e4521b425689c2cd.png" />
+                <img alt="screenshot" src="https://sandbox-cdn2.gonebusy.com/assets/how-it-works-step-4-0e072678419389b2e4521b425689c2cd.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row with-section">
+  <div class="small-12 small-centered columns my-collapse">
+    <div class="section" id="section-4">
+      <div class="row with-section">
+        <div id="section-4-header">
+          <h2>Choose a plan that's right for you</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+         </section>
+         <section id="footer" class="home">
+  <div class="row">
+    <div class="small-3 small-push-1 columns">
+      <a id="logo-footer" class="logo-small hidetext" href="/">
+      <img alt="Gonebusy" src="https://sandbox-cdn3.gonebusy.com/assets/GonebusyFullLogo-inv-4e4a1d11efa1a47faaad92fee57a9627.png" />
+</a>      <ul class="icons">
+        <li><a class="icon" href="https://github.com/gonebusy" title="GitHub" target="_blank"><i class="fa fa-github"></i></a></li>
+        <li><a class="icon" href="https://twitter.com/gonebusy" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
+        <li><a class="icon" href="https://www.facebook.com/OfficiallyGonebusy" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
+      </ul>
+    </div>
+    <div class="small-8 columns">
+      <div class="row">
+        <div class="small-4 columns">
+          <ul class="alt">
+            <li><a href="https://gonebusy.github.io/api">API</a></li>
+            <li><a href="https://gonebusy.github.io/libraries">Libraries</a></li>
+            <li><a href="https://gonebusy.github.io/blog">Blog</a></li>
+            <li><a href="/contact_us">Support</a></li>
+          </ul>
+        </div>
+        <div class="small-4 columns">
+          <ul class="alt">
+            <li><a href="/support/getting_started/">Support</a></li>
+            <li><a href="/pricing">Pricing</a></li>
+            <li><a href="/contact_us">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="small-4 columns">
+          <ul class="alt">
+            <li><a title='Login' data-reveal-id='login-modal'>Login</a></li>
+            <li><a class="dark-blue" title='Signup' data-reveal-id='signup-modal'>SIGN UP</a></li>
+            <li><a href="https://github.com/gonebusy/gonebusy.github.io/issues">Submit An Issue</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <ul class="copyright">
+    <li><a target="_blank" href="/privacy_policy">Privacy</a></li>
+    <li><a target="_blank" href="/terms_and_conditions">Terms and Conditions</a></li>
+  </ul>
+  <ul class="copyright-light">
+    <li>Gonebusy &copy; 2016. All rights reserved.</li>
+  </ul>
+</section>
+
+       </div><!-- inner-wrap -->
+     </div><!-- off-canvas-wrap -->
+
+     <script src="https://sandbox-cdn3.gonebusy.com/assets/application-90f01253b6582d628a0114fc16217927.js"></script>
+     <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
+
+     <script src="https://sandbox-cdn1.gonebusy.com/assets/home-c65623ca8c6d2fc2d1c176da5ab0a14a.js"></script>
+     <script src="https://sandbox-cdn3.gonebusy.com/assets/enquire.min-227705dc86c458036ed2e008710d5dfb.js"></script>
+
+     <!-- Stefan v0.1 START -->
+     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.6/assets/owl.carousel.css">
+     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.6/assets/owl.theme.default.css">
+     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css">
+     <script src="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.6/owl.carousel.js"></script>
+     <link href="gonebusy/css/custom.css" rel="stylesheet">
+     <script src="gonebusy/js/custom.js"></script>
+     <!-- Stefan v0.1 END -->
+
+   </body>
+</html>

@@ -1,0 +1,70 @@
+/*custom css*/
+#section-2 {
+	height: auto;
+	padding: 0 0 5%;
+	background-size: cover;
+}
+#screenshot {
+	height: auto;
+}
+#screenshot img {
+	border-radius: 0;
+}
+#featuresSlider .owl-stage-outer {
+	border-radius: 10px;
+	overflow: hidden;
+}
+.toggle-box {
+	padding: 3px 0;
+}
+.toggle-box .toggle {
+	transition: 0.3s ease-in-out;
+}
+.toggle-box .toggle.noBorder {
+	border-bottom: 0;
+}
+.toggle-box .toggle .toggle-title {
+
+}
+.toggle-box .toggle .toggle-title img {
+	vertical-align: middle;
+	display: inline-block;
+	margin-right: 12px;
+}
+.toggle-box .toggle .toggle-body {
+	height: 0;
+	overflow: hidden;
+}
+.toggle-box .toggle.selected .toggle-body {
+	
+}
+#howtoSlider {
+	max-width: 630px;
+	margin: 0 auto;
+}
+#howtoSlider .owl-stage-outer {
+	border-radius: 10px;
+	background-color: #eeeeee;
+	border: solid 2px #eeeeee;
+}
+#howtoSlider .owl-dots {
+	text-align: center;
+	padding-top: 45px;
+}
+#howtoSlider .owl-dot {
+	display: inline-block;
+	margin: 0 20px;
+}
+#howtoSlider .owl-dot span {
+	display: block;
+	width: 26px;
+	height: 26px;
+	object-fit: contain;
+	background-color: #eeeeee;
+	border: solid 3px #eeeeee;
+	border-radius: 13px;
+	transition: 0.3s ease-in-out;
+}
+#howtoSlider .owl-dot.active span {
+	background-color: #009cd9; 
+}
