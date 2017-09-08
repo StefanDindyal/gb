@@ -46,16 +46,42 @@
 	border-radius: 10px;
 	background-color: #eeeeee;
 	border: solid 2px #eeeeee;
+	margin-bottom: 45px;
 }
-#howtoSlider .owl-dots {
+.dot-nav {
+	position: relative;
 	text-align: center;
-	padding-top: 45px;
+	padding-top: 0px;
+	font-size: 0;
+	margin: 0 auto;
+	max-width: 224px;
 }
-#howtoSlider .owl-dot {
+.dot-nav .inner {
+	margin: 0 -23px;
+}
+.dot-nav .bar {
+	position: absolute;
+	width: 0%;
+	height: 4px;
+	top: 50%;
+	left: 0;
+	transform: translate(0,-50%);
+	transition: 0.3s ease-in-out;
+	padding: 0 16px;
+}
+.dot-nav .bar .inner {
+	width: 100%;
+	height: 100%;
+	background-color: #009cd9;
+	margin: 0;
+}
+.dot-dot {
+	position: relative;
 	display: inline-block;
 	margin: 0 20px;
+	cursor: pointer;
 }
-#howtoSlider .owl-dot span {
+.dot-dot span {
 	display: block;
 	width: 26px;
 	height: 26px;
@@ -65,6 +91,6 @@
 	border-radius: 13px;
 	transition: 0.3s ease-in-out;
 }
-#howtoSlider .owl-dot.active span {
+.dot-dot.active span {
 	background-color: #009cd9; 
 }
