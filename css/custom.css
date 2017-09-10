@@ -10,8 +10,14 @@
 #screenshot img {
 	border-radius: 0;
 }
-#featuresSlider .owl-stage-outer {
-	border-radius: 10px;
+.features {
+	margin: 0;
+}
+.features ul {
+	margin: 0;
+}
+.features .bx-wrapper {
+	border-radius: 10px;	
 	overflow: hidden;
 }
 .toggle-box {
@@ -19,6 +25,7 @@
 }
 .toggle-box .toggle {
 	transition: 0.3s ease-in-out;
+	cursor: pointer;
 }
 .toggle-box .toggle.noBorder {
 	border-bottom: 0;
@@ -38,15 +45,19 @@
 .toggle-box .toggle.selected .toggle-body {
 	
 }
-#howtoSlider {
+.howto {
 	max-width: 630px;
 	margin: 0 auto;
 }
-#howtoSlider .owl-stage-outer {
+.howto ul {
+	margin: 0;
+}
+.howto .bx-wrapper {
 	border-radius: 10px;
 	background-color: #eeeeee;
 	border: solid 2px #eeeeee;
 	margin-bottom: 45px;
+	overflow: hidden;
 }
 .dot-nav {
 	position: relative;
@@ -68,6 +79,7 @@
 	transform: translate(0,-50%);
 	transition: 0.3s ease-in-out;
 	padding: 0 16px;
+	z-index: 1;
 }
 .dot-nav .bar .inner {
 	width: 100%;
@@ -93,4 +105,21 @@
 }
 .dot-dot.active span {
 	background-color: #009cd9; 
+}
+.navOver {
+	position: absolute;
+	z-index: 2;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+.navOver span {
+	background-color: transparent;
+	border-color: transparent;
+}
+.bx-wrapper {
+	margin: 0;
+	border: 0;
+	background-color: transparent;
+	box-shadow: none;	
 }
