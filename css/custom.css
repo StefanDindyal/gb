@@ -16,6 +16,20 @@
 .features ul {
 	margin: 0;
 }
+.features ul li {
+	position: relative;
+}
+.features video {
+	display: block;
+	margin: 0;
+	padding: 0;
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+}
 .features .bx-wrapper {
 	border-radius: 10px;	
 	overflow: hidden;
@@ -46,11 +60,25 @@
 	
 }
 .howto {
-	max-width: 630px;
+	max-width: 100%;
 	margin: 0 auto;
 }
 .howto ul {
 	margin: 0;
+	list-style: none;
+	font-size: 0;
+	line-height: 0;
+	text-align: center;
+}
+.howto ul li {
+	width: 33.33%;
+	display: inline-block;
+	padding: 0 10px;
+}
+.howto ul li .border {
+	border-radius: 10px;
+	border: solid 2px #eeeeee;
+	overflow: hidden;
 }
 .howto .bx-wrapper {
 	border-radius: 10px;
@@ -116,6 +144,69 @@
 .navOver span {
 	background-color: transparent;
 	border-color: transparent;
+}
+.devices {	
+	position: relative;
+	max-width: 770px;
+}
+.devices ul {
+	margin: 0;
+	padding: 0;
+}
+.transition {
+	position: relative;
+	overflow: hidden;
+}
+.switchA,
+.switchB {
+	position: absolute;
+	top: 50%;
+	transform: translate(0,-50%);
+	background-color: white;
+	color: black;
+}
+.switchA {
+	right:1%;
+}
+.switchB {
+	left: 1%;
+}
+.modeA,
+.modeB {
+	transition: 0.3s ease-in-out;
+}
+.modeA {
+	
+}
+.modeB {
+	position: absolute;
+	transform: translate(105%, 0);
+}
+.transition.out .modeA {
+	transform: translate(-105%, 0);
+}
+.transition.out .modeB {
+	transform: translate(0%, 0);
+}
+.modeA .featuresA,
+.modeB .featuresB {
+	position: absolute;
+    top: 7.8%;
+    left: 16%;
+    width: 66.7% !important;
+    height: 74.7%!important;
+    overflow: hidden;
+    background-color: #999;
+}
+.modeA .mobileA,
+.modeB .mobileB {
+	position: absolute;
+    top: 34.3%;
+    left: 80.4%;
+    width: 18.2% !important;
+    height: 56.3%!important;
+    overflow: hidden;
+    background-color: #999;
 }
 .bx-wrapper {
 	margin: 0;
