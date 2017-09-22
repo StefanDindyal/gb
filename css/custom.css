@@ -153,6 +153,30 @@
 	margin: 0;
 	padding: 0;
 }
+.moveText {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	border-bottom: 2px solid white;	
+	vertical-align: middle;
+}
+.moveText .block {
+	transition: 0.3s ease-in-out;
+	width: 100%;
+	height: 100%;
+	padding: 8px 0;
+}
+.moveText .block.business {
+	transform: translate(0,100%);
+	position: absolute;
+	left: 0;
+}
+.moveText.out .block.business {
+	transform: translate(0,-100%);
+}
+.moveText.out .block.customers {
+	transform: translate(0,-100%);
+}
 .transition {
 	position: relative;
 	overflow: hidden;
@@ -162,18 +186,19 @@
 	position: absolute;
 	top: 50%;
 	transform: translate(0,-50%);
-	background-color: white;
+	/*background-color: white;*/
 	color: black;
 }
 .switchA {
-	right:1%;
+	right:2%;
 }
 .switchB {
-	left: 1%;
+	left: 2%;
 }
 .modeA,
 .modeB {
 	transition: 0.3s ease-in-out;
+	padding: 0 6%;
 }
 .modeA {
 	

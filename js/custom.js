@@ -86,10 +86,12 @@
 		setUp([featuresA], toggleA);
 		setUp([featuresB], toggleB);
 		$('.switchA').on('click', function(e){
-			$('.transition').addClass('out');
+			$('.transition, .moveText').addClass('out');
+			transit(0, [featuresB, mobileB], toggleB);
 		});
 		$('.switchB').on('click', function(e){
-			$('.transition').removeClass('out');
+			$('.transition, .moveText').removeClass('out');
+			transit(0, [featuresA, mobileA], toggleA);
 		});
 	}
 	// platform page End
