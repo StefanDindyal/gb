@@ -18,13 +18,13 @@
 			pause: 4000,
 			autoHover: true,		
 			onSlideBefore: function($slideElement, oldIndex, newIndex){
-				transit(newIndex, [features]);
+				transit(newIndex, [features], toggle);
 			},
 			onSliderLoad: function($slideElement, oldIndex, newIndex){			
 				autoPlay($slideElement, oldIndex, newIndex);
 			}
 		});
-		setUp([features]);		
+		setUp([features], toggle);		
 	}
 	// home page End
 

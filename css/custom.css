@@ -188,6 +188,7 @@
 	transform: translate(0,-50%);
 	/*background-color: white;*/
 	color: black;
+	cursor: pointer;
 }
 .switchA {
 	right:2%;
