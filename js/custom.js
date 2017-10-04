@@ -46,8 +46,14 @@
 			auto: true,
 			pause: 4000,
 			autoHover: true,		
-			onSlideBefore: function($slideElement, oldIndex, newIndex){
+			onSlideBefore: function($slideElement, oldIndex, newIndex){				
+				if($('.modeA .toggle-box .toggle.selected').next().length == 0){					
+					topicSwitch();
+				}
 				transit(newIndex, [featuresA, mobileA], toggleA);
+			},
+			onSlideAfter: function($slideElement, oldIndex, newIndex){
+								
 			},
 			onSliderLoad: function($slideElement, oldIndex, newIndex){			
 				autoPlay($slideElement, oldIndex, newIndex);
@@ -66,13 +72,19 @@
 			controls: false,
 			touchEnabled: false,
 			video: true,
-			auto: true,
+			auto: false,
 			pause: 4000,
 			autoHover: true,		
 			onSlideBefore: function($slideElement, oldIndex, newIndex){
+				if($('.modeB .toggle-box .toggle.selected').next().length == 0){
+					topicSwitch();
+				}
 				transit(newIndex, [featuresB, mobileB], toggleB);
 			},
-			onSliderLoad: function($slideElement, oldIndex, newIndex){			
+			onSlideAfter: function($slideElement, oldIndex, newIndex){
+								
+			},
+			onSliderLoad: function($slideElement, oldIndex, newIndex){		
 				autoPlay($slideElement, oldIndex, newIndex);
 			}
 		});
@@ -85,14 +97,22 @@
 		});
 		setUp([featuresA], toggleA);
 		setUp([featuresB], toggleB);
-		$('.switchA').on('click', function(e){
-			$('.transition, .moveText').addClass('out');
-			transit(0, [featuresB, mobileB], toggleB);
-		});
-		$('.switchB').on('click', function(e){
-			$('.transition, .moveText').removeClass('out');
-			transit(0, [featuresA, mobileA], toggleA);
-		});
+		$('.switchA, .switchB, .moveText').on('click', function(e){
+			topicSwitch();
+		});		
+		function topicSwitch(){
+	    	if($('.transition, .moveText').hasClass('out')){
+	    		$('.transition, .moveText').removeClass('out');
+	    		featuresB.stopAuto();
+				featuresA.startAuto();
+	    		transit(0, [featuresA, mobileA], toggleA);	
+	    	} else {
+	    		$('.transition, .moveText').addClass('out');
+	    		featuresA.stopAuto();
+				featuresB.startAuto();
+	    		transit(0, [featuresB, mobileB], toggleB);
+	    	}		
+	    }
 	}
 	// platform page End
 
@@ -135,61 +155,5 @@
         vid.play();
       }
     }
-
-	// howto slider Start
-	// const howtoCount = howto.find('img').length, howto = $('#howtoSlider');
-	// howto.parent().append('<div class="dot-nav"><div class="inner"></div><div class="navOver"><div class="inner"></div></div><div class="bar"><div class="inner"></div></div></div>');
-	// for(i=0; i< howtoCount; i++){
-	// 	$('.dot-nav > .inner, .dot-nav .navOver .inner').append('<div class="dot-dot"><span></span></div>');	
-	// }
-	// howto.bxSlider({
-	// 	mode: 'horizontal',
-	// 	pager: false,
-	// 	controls: false,
-	// 	touchEnabled: false,
-	// 	auto: true,
-	// 	pause: 4000,
-	// 	onSliderLoad: function(){
-	// 		$('.dot-dot').eq(0).addClass('active');
-	// 	},
-	// 	onSlideBefore: function($slideElement, oldIndex, newIndex){
-	// 		moveBar($slideElement, oldIndex, newIndex);
-	// 	}
-	// });
-	// $('.dot-dot').on('click', function(e){
-	// 	const el = $(this),
-	// 		index = el.index();
-	// 	howto.goToSlide(index);
-	// });
-	// function moveBar($slideElement, oldIndex, newIndex){
-	// 	const el = howto,
- //    		item = newIndex,
- //    		dots = $('.dot-nav'),
- //    		bar = $('.bar');
- //    	if(item == 0){
- //    		$('.dot-dot').removeClass('active');
- //    		dots.find('.dot-dot').eq(0).addClass('active');
- //    		bar.css('width','0%');
- //    	} else if(item == 1){
- //    		$('.dot-dot').removeClass('active');
- //    		dots.find('.dot-dot').eq(0).addClass('active');
- //    		dots.find('.dot-dot').eq(1).addClass('active');
- //    		bar.css('width','42%');
- //    	} else if(item == 2){
- //    		$('.dot-dot').removeClass('active');
- //    		dots.find('.dot-dot').eq(0).addClass('active');
- //    		dots.find('.dot-dot').eq(1).addClass('active');
- //    		dots.find('.dot-dot').eq(2).addClass('active');
- //    		bar.css('width','72%');
- //    	} else if(item == 3){
- //    		$('.dot-dot').removeClass('active');
- //    		dots.find('.dot-dot').eq(0).addClass('active');
- //    		dots.find('.dot-dot').eq(1).addClass('active');
- //    		dots.find('.dot-dot').eq(2).addClass('active');
- //    		dots.find('.dot-dot').eq(3).addClass('active');
- //    		bar.css('width','100%');
- //    	}
-	// }
-	// howto slider End
 
 })(jQuery);
