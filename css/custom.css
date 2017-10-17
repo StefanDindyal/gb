@@ -1,4 +1,33 @@
-/*custom css*/
+/*custom css - stefan*/
+
+/*general global styles*/
+.row {
+	max-width: none;
+}
+/*general global end*/
+
+/*general header styles*/
+.header {}
+.top-desktop-row {
+	margin: 0;
+}
+.header nav {
+	width: 100%;
+	padding: 0 10rem;
+}
+.top-bar .name {
+	height: auto;
+}
+.logo img {
+	margin: 0;
+}
+/*general header end*/
+
+/*general footer styles*/
+#footer {}
+/*general footer end*/
+
+/*features section*/
 #section-2 {
 	height: auto;
 	padding: 0 0 5%;
@@ -59,6 +88,9 @@
 .toggle-box .toggle.selected .toggle-body {
 	
 }
+/*features end*/
+
+/*how to section*/
 .howto {
 	max-width: 100%;
 	margin: 0 auto;
@@ -145,6 +177,9 @@
 	background-color: transparent;
 	border-color: transparent;
 }
+/*how to end*/
+
+/*Platform page*/
 .devices {	
 	position: relative;
 	max-width: 770px;
@@ -186,7 +221,6 @@
 	position: absolute;
 	top: 50%;
 	transform: translate(0,-50%);
-	/*background-color: white;*/
 	color: black;
 	cursor: pointer;
 }
@@ -234,9 +268,13 @@
     overflow: hidden;
     background-color: #999;
 }
+/*Platform end*/
+
+/*bx slider modifiers*/
 .bx-wrapper {
 	margin: 0;
 	border: 0;
 	background-color: transparent;
 	box-shadow: none;	
 }
+/*bx slider end*/
