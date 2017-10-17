@@ -194,6 +194,7 @@
 	overflow: hidden;
 	border-bottom: 2px solid white;	
 	vertical-align: middle;
+	cursor: pointer;
 }
 .moveText .block {
 	transition: 0.3s ease-in-out;
@@ -216,6 +217,9 @@
 	position: relative;
 	overflow: hidden;
 }
+.transition .devices .device {
+	visibility: hidden;
+}
 .switchA,
 .switchB {
 	position: absolute;
@@ -236,11 +240,12 @@
 	padding: 0 6%;
 }
 .modeA {
-	
+	position: relative;
 }
 .modeB {
 	position: absolute;
 	transform: translate(105%, 0);
+	top: 0;
 }
 .transition.out .modeA {
 	transform: translate(-105%, 0);
@@ -254,9 +259,13 @@
     top: 7.8%;
     left: 16%;
     width: 66.7% !important;
-    height: 74.7%!important;
+    /*height: 74.7%!important;*/
     overflow: hidden;
     background-color: #999;
+    background-color: transparent;
+    border: 10px solid #f1f1f1;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 .modeA .mobileA,
 .modeB .mobileB {
@@ -264,9 +273,13 @@
     top: 34.3%;
     left: 80.4%;
     width: 18.2% !important;
-    height: 56.3%!important;
+    /*height: 56.3%!important;*/
     overflow: hidden;
     background-color: #999;
+    background-color: transparent;
+    border: 10px solid #f1f1f1;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 /*Platform end*/
 
@@ -276,5 +289,11 @@
 	border: 0;
 	background-color: transparent;
 	box-shadow: none;	
+}
+.modeA .mobileA .bx-wrapper,
+.modeB .mobileB .bx-wrapper,
+.modeA .featuresA .bx-wrapper,
+.modeB .featuresB .bx-wrapper {
+	border: 1px solid #ccc;	
 }
 /*bx slider end*/
