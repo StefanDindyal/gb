@@ -20,7 +20,12 @@
 }
 .logo img {
 	margin: 0;
+	margin-top: -14px;
+	transform: translate(0,50%);	
 }
+.top-bar-section li:not(.has-form) a:not(.button) {
+	/*line-height: 8.7rem;*/
+} 
 /*general header end*/
 
 /*general footer styles*/

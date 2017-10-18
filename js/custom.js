@@ -6,6 +6,7 @@
 	// homepage Start
 	if($('.homePage').length){		
 		const 
+		slideTimer = [12000,0,0,0],
 		features = $('#featuresSlider'),
 		toggle = $('.toggle-box .toggle');
 		features.bxSlider({
@@ -16,15 +17,33 @@
 			video: true,
 			auto: true,
 			pause: 4000,
-			autoHover: true,		
+			autoHover: true,
+			autoStart: false,		
 			onSlideBefore: function($slideElement, oldIndex, newIndex){
 				transit(newIndex, [features], toggle);
 			},
-			onSliderLoad: function($slideElement, oldIndex, newIndex){			
-				autoPlay($slideElement, oldIndex, newIndex);
+			onSlideAfter: function($slideElement, oldIndex, newIndex){
+				pauseForVid(newIndex, features, slideTimer);
+			},
+			onSliderLoad: function(currentIndex){			
+				autoPlay(currentIndex);
+				pauseForVid(0, features, slideTimer);				
 			}
-		});
+		});		
 		setUp([features], toggle);		
+		function pauseForVid(current, slider, wait) {
+	    	const
+	    	vid = current;
+	    	slider.stopAuto();
+	    	if(slider.find('li[aria-hidden="false"] video').length){
+	    		console.log('stop'+wait[vid]);	    		
+	    		setTimeout(function(){
+					slider.startAuto();
+				}, wait[vid]);
+	    	} else {
+	    		slider.startAuto();
+	    	}
+	    }
 	}
 	// home page End
 
