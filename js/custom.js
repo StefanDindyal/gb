@@ -23,27 +23,15 @@
 				transit(newIndex, [features], toggle);
 			},
 			onSlideAfter: function($slideElement, oldIndex, newIndex){
+				autoPlay(features, newIndex, oldIndex);
 				pauseForVid(newIndex, features, slideTimer);
 			},
 			onSliderLoad: function(currentIndex){			
-				autoPlay(currentIndex);
+				autoPlay(features, currentIndex, 0);
 				pauseForVid(0, features, slideTimer);				
 			}
 		});		
 		setUp([features], toggle);		
-		function pauseForVid(current, slider, wait) {
-	    	const
-	    	vid = current;
-	    	slider.stopAuto();
-	    	if(slider.find('li[aria-hidden="false"] video').length){
-	    		console.log('stop'+wait[vid]);	    		
-	    		setTimeout(function(){
-					slider.startAuto();
-				}, wait[vid]);
-	    	} else {
-	    		slider.startAuto();
-	    	}
-	    }
 	}
 	// home page End
 
@@ -74,8 +62,8 @@
 			onSlideAfter: function($slideElement, oldIndex, newIndex){
 								
 			},
-			onSliderLoad: function($slideElement, oldIndex, newIndex){			
-				autoPlay($slideElement, oldIndex, newIndex);
+			onSliderLoad: function(currentIndex){			
+				autoPlay(currentIndex);
 			}
 		});
 		mobileA.bxSlider({
@@ -103,8 +91,8 @@
 			onSlideAfter: function($slideElement, oldIndex, newIndex){
 								
 			},
-			onSliderLoad: function($slideElement, oldIndex, newIndex){		
-				autoPlay($slideElement, oldIndex, newIndex);
+			onSliderLoad: function(currentIndex){		
+				autoPlay(currentIndex);
 			}
 		});
 		mobileB.bxSlider({
@@ -167,12 +155,31 @@
 		el.addClass('selected').prev().addClass('noBorder');		
 		el.find('.toggle-body').animate({height:innerHeight},{duration:timing,queue:false});
 	}
-	function autoPlay($ele, from, to) {
-      const 
-      vid = document.querySelector('#vid');
-      if (vid) {
-        vid.play();
-      }
+	function autoPlay(slider, index, old) {		
+		const 
+		vid = slider.getSlideElement(index),
+		vidPrev = slider.getSlideElement(old),
+		vidPrevEl = vidPrev.find('video'),
+		vidEl = vid.find('video');
+		if(vidPrevEl.length){
+			vidPrevEl.get(0).pause();
+			console.log(vidPrev);	
+		}		
+		if (vidEl.length) {
+			vidEl.get(0).play();
+		}
     }
+    function pauseForVid(current, slider, wait) {
+	    	const
+	    	vid = current;
+	    	slider.stopAuto();
+	    	if(slider.find('li[aria-hidden="false"] video').length){    		
+	    		setTimeout(function(){
+					slider.startAuto();
+				}, wait[vid]);
+	    	} else {
+	    		slider.startAuto();
+	    	}
+	    }
 
 })(jQuery);
