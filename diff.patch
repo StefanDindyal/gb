@@ -1,0 +1,2069 @@
+diff --git a/contact-us.html b/contact-us.html
+new file mode 100644
+index 0000000..271f8c0
+--- /dev/null
++++ b/contact-us.html
+@@ -0,0 +1,531 @@
++
++<!DOCTYPE html>
++<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
++<!--[if gt IE 8]><!--><html class="no-js" lang="en" ><!--<![endif]-->
++<head>
++  <meta charset="utf-8">
++<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"0746a72f03","applicationID":"7195857","transactionName":"cwoPQ0BWXVlXRU4XTVERCFRtSVBSV0ROB1ZeEQBURmZERg==","queueTime":0,"applicationTime":20,"agent":""}</script>
++<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1059.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
++  <meta name="viewport" content="width=device-width, initial-scale=1.0">
++  <link rel="shortcut icon" type="image/x-icon" href="https://beta-cdn2.gonebusy.com/assets/favicon-886019e737c8b8954e475832bfb365c5.ico" />
++  <link rel="apple-touch-icon" type="image/png" href="https://beta-cdn2.gonebusy.com/assets/gb-icon-144x144-29e4bfda5426b5d89b9a3e4a6ed4495c.png" />
++  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
++    rel="stylesheet"
++    integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1"
++    crossorigin="anonymous">
++  <link rel="stylesheet" media="all" href="https://beta-cdn1.gonebusy.com/assets/application-79a16106b0c8c08eb17a7528f4240fc7.css" />
++  <script src="https://beta-cdn2.gonebusy.com/assets/modernizr-d118d2162094c975646904938b308cba.js"></script>
++<!--[if lt IE 9]>
++  <script src="https://beta-cdn2.gonebusy.com/assets/html5shiv-ed60fa31dc90ed6ac37f8b12db6d9808.js"></script>
++  <script src="https://beta-cdn1.gonebusy.com/assets/respond.min-72d496e1e7b73bb9a16f6bd6361c80fe.js"></script>
++<![endif]-->
++  <meta name="csrf-param" content="authenticity_token" />
++<meta name="csrf-token" content="GQs4YFD1Ofa04AnsUrda0N2dWBm7oh36iLA0Mphkwsj72c1UZK/zxsxaHkQZtk5ct2/shnfuf/bagf8ufQKcAg==" />
++  
++    <title>Gonebusy | Contact Us</title>
++    <script>
++      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
++      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
++      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
++      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
++
++      ga('create', 'UA-61437504-1', 'auto');
++      ga('send', 'pageview');
++    </script>
++
++</head>
++<body   ng-app="contactApp"
++>
++     <div class="off-canvas-wrap" data-offcanvas>
++       <div class="inner-wrap">
++         <aside class="right-off-canvas-menu">
++           <ul class="off-canvas-list">
++               <li><a href="/platform">Platform</a></li>
++               <li><a href="https://gonebusy.github.io">Developers</a></li>
++               <li><a href="/support/getting_started/">Support</a></li>
++               <li><a title='Login' data-reveal-id='login-modal'>Login</a></li>
++               <li><a title='Get Started' class='button radius' data-reveal-id='signup-modal'>Get Started</a></li>
++               
++               <li><div class="off-canvas-sub-footer"><img alt="Gonebusy" src="https://beta-cdn2.gonebusy.com/assets/GonebusyFullLogo-inv-0001fe28d1483a1e4864d933ede056a4.svg" /></div></li>
++               <li class="off-canvas-footer"><a target="_blank" href="/privacy_policy">Privacy Policy</a> | <a target="_blank" href="/terms_and_conditions">Terms &amp; Conditions</a></li>
++           </ul>
++         </aside>
++
++         <nav class="top-bar hide-for-medium-up" data-topbar role="navigation">
++           <section class="left">
++             <a id="logo-box-small" class="logo-small hidetext" href="/">
++               <img alt="Gonebusy" src="https://beta-cdn2.gonebusy.com/assets/GonebusyFullLogo-inv-0001fe28d1483a1e4864d933ede056a4.svg" />
++</a>           </section>
++
++           <section class="middle top-bar-section hide-for-small">
++           </section>
++
++           <section class="right-small">
++             <a class="right-off-canvas-toggle">
++               <div>
++                 <p class="nav-icon"><i class="fa fa-bars"></i></p>
++               </div>
++             </a>
++           </section>
++         </nav>
++
++         <a class="exit-off-canvas"></a>
++
++         <div class="fixed contain-to-grid show-for-medium-up header">
++           <div class="row top-desktop-row">
++             <div class="small-12 columns">
++               <nav class="top-bar show-for-medium-up" data-topbar role="navigation">
++                 <ul class="title-area">
++                   <li class="name">
++                     <a class="logo hidetext" href="/">
++                       <img alt="Gonebusy" src="https://beta-cdn2.gonebusy.com/assets/GonebusyFullLogo-inv-0001fe28d1483a1e4864d933ede056a4.svg" />
++</a>                   </li>
++                 </ul>
++
++                 <section id="topNav" class="top-bar-section">
++                   <!-- Right Nav section -->
++                   <ul class="right">
++                       <li><a href="/platform">Platform</a></li>
++                       <li class= ><a href="https://gonebusy.github.io" class="clickable">Developers</a></li>
++                       <li class= ><a class="clickable" href="/support/getting_started/">Support</a></li>
++                       <li><a title='Login' class='clickable' data-reveal-id='login-modal'>Login</a></li>
++                       <li class="get-started"><a title='Get Started' class='clickable button radius' data-reveal-id='signup-modal'>Get Started</a></li>
++                   </ul>
++
++                   <!-- Left Nav section -->
++                   <ul class="left">
++                   </ul>
++                 </section>
++               </nav>
++             </div>
++           </div>
++         </div><!-- contain-to-grid header-->
++
++         <div id='signup-modal' class='signup reveal-modal tiny' data-reveal aria-labelledby="signupTitle" aria-hidden="true" role="dialog">
++           <div class="row no-left-margin">
++  <div class="small-12 small-centered text-center columns">
++    <div class="row">
++      <div class="small-12 small-centered text-center columns titlebar">
++        <img alt="Gonebusy" src="https://beta-cdn2.gonebusy.com/assets/GonebusyGlyph-0217ae5ccfc056b8eeceb2852584f8f0.svg" />
++        <h2>Welcome to Gonebusy</h2>
++        
++      </div>
++    </div>
++    <div class="row">
++      <div class="small-12 small-centered text-center columns">
++        <form id="emailSignupForm" action="emailSignupForm" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="avkf+91pNgQbtUmwtL9I3USUXQyu5HxHzXAvZu89y7OIK+rP6TP8NGMPXhj/vlxRLmbpk2KoHkufQeR6CluVeQ==" />
++          <input type="email" name="email" id="email" class="form-control radius" placeholder="Enter a valid email address" maxlength="60" size="20" required="required" onKeyPress="return window.fakeOutEnterKey(event, &#39;a#mainSignupSubmit&#39;)" />
++          <input type="submit" name="commit" value="hiddenSubmit" id="hiddenSubmit" style="display:none;" />
++</form>        <div class="base">
++          <div class="log">
++            <a href='#' title='Continue' id="mainSignupSubmit" class="submit faked button radius" data-form="#emailSignupForm">Continue</a>
++          </div>
++        </div>
++        <div id="or-block">
++          <span>OR</span>
++        </div>
++      </div>
++      <div class="small-12 small-centered text-center columns">
++  <ul class="buttonsection">
++    <li>
++      <a class="btn btn-block btn-social btn-facebook font-btn button radius" href="/users/auth/facebook">
++        <i class="fa fa-facebook line_height line-height55"></i>
++        Continue with Facebook
++</a>    </li>
++    <li>
++      <a class="btn btn-block btn-social btn-google-plus font-btn button radius" href="/users/auth/google">
++        <i  class="fa fa-google font_15"></i>
++        Continue with Google
++</a>    </li>
++  </ul>
++</div>
++<dl class="accordion" data-accordion>
++  <dd class="accordion-navigation">
++    <a id="more-link" href="#more-logins" data-content="more-logins">More login options <i class="glyphicon fa fa-plus-circle"></i></a>
++    <div id="more-logins" class="small-12 small-centered text-center columns content">
++      <ul class="buttonsection">
++        <li>
++          <a class="btn btn-block btn-social btn-twitter font-btn button radius" href="/users/auth/twitter">
++          <i  class="fa fa-twitter"></i>
++          Continue with Twitter
++</a>        </li>
++        <li>
++          <a class="btn btn-block btn-social btn-github font-btn button radius" href="/users/auth/github">
++          <i  class="fa fa-github"></i>
++          Continue with GitHub
++</a>        </li>
++      </ul>
++    </div>
++  </dd>
++</dl>
++<div class="small-12 text-center columns last">
++  <p>We never post anything anywhere without your consent.</p>
++</div>
++
++      <div class="small-12 small-centered text-center columns">
++        <span id="user-agreement">Creating an account means you agree to our <a target="_blank" href="/privacy_policy">Privacy Policy</a> and <a target="_blank" href="/terms_and_conditions">Terms &amp; Conditions</a></span>
++      </div>
++    </div>
++  </div>
++</div>
++
++           <a class="close-reveal-modal" aria-label="Close">&#215;</a>
++         </div>
++
++         <div id='signup-part-two-modal' class='signup reveal-modal tiny' data-reveal aria-labelledby="signupTitle" aria-hidden="true" role="dialog">
++           <div class="image-overlay-content" style="display:none;">
++  <i class="fa fa-refresh fa-spin" style="font-size:24px"></i>
++</div>
++<div class="row no-left-margin">
++  <div class="small-12 small-centered text-center columns">
++    <div class="row">
++      <div class="small-12 small-centered text-center columns titlebar">
++        <img alt="Gonebusy" src="https://beta-cdn2.gonebusy.com/assets/GonebusyGlyph-0217ae5ccfc056b8eeceb2852584f8f0.svg" />
++        <h3>Now choose a password.<br>You can always change it later.</h3>
++      </div>
++    </div>
++    <div class="row">
++      <div class="small-12 small-centered text-center columns">
++        <form id="submitSignupForm" action="/users" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="jxcmyPpHiqHqD15RLQybR2SR6A//29ki8TFQSEUrsFVtxdP8zh1AkZK1SflmDY/LDmNckDOXuy6jAJtUoE3unw==" />
++          <input class="form-control radius" size="20" readonly="readonly" type="text" name="user[email]" id="user_email" />
++          <input class="form-control radius" placeholder="Password - 8 character minimum" maxlength="50" size="20" required="required" type="password" name="user[password]" id="user_password" />
++          <div class="base">
++            <div class="log">
++              <input type="submit" name="commit" value="Continue" class="submit button radius" />
++            </div>
++          </div>
++</form>        <div id="or-block">
++          <span>OR</span>
++        </div>
++      </div>
++      <div class="small-12 small-centered text-center columns">
++  <ul class="buttonsection">
++    <li>
++      <a class="btn btn-block btn-social btn-facebook font-btn button radius" href="/users/auth/facebook">
++        <i class="fa fa-facebook line_height line-height55"></i>
++        Continue with Facebook
++</a>    </li>
++    <li>
++      <a class="btn btn-block btn-social btn-google-plus font-btn button radius" href="/users/auth/google">
++        <i  class="fa fa-google font_15"></i>
++        Continue with Google
++</a>    </li>
++  </ul>
++</div>
++<dl class="accordion" data-accordion>
++  <dd class="accordion-navigation">
++    <a id="more-link" href="#more-logins" data-content="more-logins">More login options <i class="glyphicon fa fa-plus-circle"></i></a>
++    <div id="more-logins" class="small-12 small-centered text-center columns content">
++      <ul class="buttonsection">
++        <li>
++          <a class="btn btn-block btn-social btn-twitter font-btn button radius" href="/users/auth/twitter">
++          <i  class="fa fa-twitter"></i>
++          Continue with Twitter
++</a>        </li>
++        <li>
++          <a class="btn btn-block btn-social btn-github font-btn button radius" href="/users/auth/github">
++          <i  class="fa fa-github"></i>
++          Continue with GitHub
++</a>        </li>
++      </ul>
++    </div>
++  </dd>
++</dl>
++<div class="small-12 text-center columns last">
++  <p>We never post anything anywhere without your consent.</p>
++</div>
++
++    </div>
++  </div>
++</div>
++
++           <a class="close-reveal-modal" aria-label="Close">&#215;</a>
++         </div>
++
++         <div id='login-modal' class='signup reveal-modal tiny' data-reveal aria-labelledby="loginTitle" aria-hidden="true" role="dialog">
++           <div class="image-overlay-content" style="display:none;">
++  <i class="fa fa-refresh fa-spin" style="font-size:24px"></i>
++</div>
++<div class="row no-left-margin">
++  <div class="small-12 small-centered text-center columns">
++    <div class="row">
++      <div class="small-12 small-centered text-center columns titlebar">
++        <img alt="Gonebusy" src="https://beta-cdn2.gonebusy.com/assets/GonebusyGlyph-0217ae5ccfc056b8eeceb2852584f8f0.svg" />
++        <h2 id='loginTitle'>Log In</h2>
++      </div>
++    </div>
++    <div class="row">
++      <div class="small-12 small-centered text-center columns">
++        <form novalidate="novalidate" class="simple_form user" action="/users/sign_in" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="4fesEFegoGN7AN1izrE16apGbELoS3ZUmH9dmGTwuMgDJVkkY/pqUwO6ysqFsCFlwLTY3SQHFFjKTpaEgZbmAg==" />
++          
++          <div class="input email required user_email"><input class="string email required form-control radius" maxlength="50" size="20" required="required" aria-required="true" placeholder="Email" type="email" name="user[email]" id="user_email" /></div>
++          <div class="input password required user_password"><input class="password required form-control radius" maxlength="50" size="20" required="required" aria-required="true" placeholder="Password - 8 character minimum" type="password" name="user[password]" id="user_password" /></div>
++          <div class="input boolean optional user_remember_me"><input value="false" type="hidden" name="user[remember_me]" /><label class="boolean optional control-label checkbox" for="user_remember_me"><input class="boolean optional radius" type="checkbox" value="true" checked="checked" name="user[remember_me]" id="user_remember_me" />Keep me logged in</label></div>
++          <div class="base">
++            <div class="log">
++              <input type="submit" name="commit" value="Let me in !" class="button submit button radius" />
++            </div>
++            <div class="forgot">
++              <a href='#' title='ForgotPassword' data-reveal-id='forgot-password-modal'>Forgot your password?</a>
++            </div>
++          </div>
++</form>      </div>
++      <div class="small-12 small-centered text-center columns">
++  <ul class="buttonsection">
++    <li>
++      <a class="btn btn-block btn-social btn-facebook font-btn button radius" href="/users/auth/facebook">
++        <i class="fa fa-facebook line_height line-height55"></i>
++        Continue with Facebook
++</a>    </li>
++    <li>
++      <a class="btn btn-block btn-social btn-google-plus font-btn button radius" href="/users/auth/google">
++        <i  class="fa fa-google font_15"></i>
++        Continue with Google
++</a>    </li>
++  </ul>
++</div>
++<dl class="accordion" data-accordion>
++  <dd class="accordion-navigation">
++    <a id="more-link" href="#more-logins" data-content="more-logins">More login options <i class="glyphicon fa fa-plus-circle"></i></a>
++    <div id="more-logins" class="small-12 small-centered text-center columns content">
++      <ul class="buttonsection">
++        <li>
++          <a class="btn btn-block btn-social btn-twitter font-btn button radius" href="/users/auth/twitter">
++          <i  class="fa fa-twitter"></i>
++          Continue with Twitter
++</a>        </li>
++        <li>
++          <a class="btn btn-block btn-social btn-github font-btn button radius" href="/users/auth/github">
++          <i  class="fa fa-github"></i>
++          Continue with GitHub
++</a>        </li>
++      </ul>
++    </div>
++  </dd>
++</dl>
++<div class="small-12 text-center columns last">
++  <p>We never post anything anywhere without your consent.</p>
++</div>
++
++    </div>
++  </div>
++</div>
++
++           <a class="close-reveal-modal" aria-label="Close">&#215;</a>
++         </div>
++
++         <div id='forgot-password-modal' class='signup reveal-modal tiny' data-reveal aria-labelledby="forgotPasswordTitle" aria-hidden="true" role="dialog">
++           <div class="image-overlay-content" style="display:none;">
++  <i class="fa fa-refresh fa-spin" style="font-size:24px"></i>
++</div>
++<div class="row no-left-margin">
++  <div class="small-12 small-centered text-center columns">
++    <div class="row">
++      <div class="small-12 small-centered text-center columns titlebar">
++        <img alt="Gonebusy" src="https://beta-cdn2.gonebusy.com/assets/GonebusyGlyph-0217ae5ccfc056b8eeceb2852584f8f0.svg" />
++        <h3>Please enter the email associated with your account.</h3>
++      </div>
++    </div>
++    <div class="row">
++      <div class="small-12 small-centered text-center columns last">
++        <form novalidate="novalidate" class="simple_form user" action="/users/password" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="0yErlF3Nr6sFoYWcoU0xiDpgeoQ1oaSU3Ju3JSl2h7kx896gaZdlm30bkjTqTCUEUJLOG/ntxpiOqnw5zBDZcw==" />
++          
++          <div class="field">
++            <div class="input email required user_email"><input class="string email required form-control radius" maxlength="50" size="20" required="required" aria-required="true" placeholder="Email" type="email" name="user[email]" id="user_email" /></div>
++            <input type="submit" name="commit" value="Reset my password" class="button submit button radius" />
++          </div>
++</form>      </div>
++    </div>
++  </div>
++</div>
++
++           <a class="close-reveal-modal" aria-label="Close">&#215;</a>
++         </div>
++
++         <section id="cont" class="static_pages"   ng-controller="ContactController"
++>
++           <div class="row">
++  <div id="alerts" class="small-12 columns">
++    <uib-alert ng-repeat="alert in alerts" type="{{alert.type}}" close="closeAlert(alert)" dismiss-on-timeout="{{alert.timeout}}" uib-collapse="alert.closed" ng-cloak>
++      <span ng-bind-html="alert.msg"></span>
++    </uib-alert>
++  </div>
++</div>
++
++           <div>
++  <div class="row">
++    <div class="guide-body small-12 medium-7 medium-push-1 columns">
++      <h1>Contact Us</h1>
++      <form id="contactForm" editable-form name="contactForm" onbeforesave="new_contact(contactForm, contactForm.$data)" onaftersave="keep_form_open()" class="form-group" shown="true">
++        <div class="small-12 columns">
++          <div class="row">
++            <div class="small-12 columns">
++              <div>
++                <label class="title">Your Full Name</label>
++              </div>
++              <div class="input-wrap">
++                <span editable-text="data.contact.full_name" e-name="full_name" e-required e-placeholder="required" ng-cloak>
++                  {{ contact.full_name || '' }}
++                </span>
++              </div>
++            </div>
++          </div>
++          <div class="row">
++            <div class="small-12 columns">
++              <div>
++                <label class="title">Organization Name</label>
++              </div>
++              <div class="input-wrap">
++                <span editable-text="data.contact.company" e-name="company" ng-cloak>
++                  {{ contact.company || '' }}
++                </span>
++              </div>
++            </div>
++          </div>
++          <div class="row">
++            <div class="small-12 columns">
++              <div>
++                <label class="title">Your Email</label>
++              </div>
++              <div class="input-wrap">
++                <span editable-email="data.contact.email" e-name="email" e-required e-placeholder="required" ng-cloak>
++                  {{ contact.email || '' }}
++                </span>
++              </div>
++            </div>
++          </div>
++          <div class="row">
++            <div class="small-12 columns">
++              <div>
++                <label class="title">Phone Number</label>
++              </div>
++              <div class="input-wrap">
++                <span editable-tel="data.contact.phone" e-name="phone" e-pattern="((\+?(\d{11}|\d{10}))|(\d{3}[-.]\d{3}[-.]\d{4}))" ng-cloak>
++                  {{ contact.phone || '' }}
++                </span>
++              </div>
++            </div>
++          </div>
++          <div class="row">
++            <div class="small-12 columns">
++              <div>
++                <label class="title">How can we help?</label>
++              </div>
++              <div class="input-wrap">
++                <span editable-textarea="data.contact.message" e-name="message" e-rows="10" e-cols="60" e-required e-placeholder="Write us a message..." ng-cloak>
++                  {{ contact.message || '' }}
++                </span>
++              </div>
++            </div>
++          </div>
++          <div class="row">
++            <div class="small-12 columns">
++              <div vc-recaptcha key="data.recaptcha_public_key"></div>
++            </div>
++          </div>
++          <div class="row">
++            <div class="small-12 columns left">
++              <div class="buttons small-only-text-center medium-text-left">
++                <button id="save" type="submit" class="button radius" ng-disabled="contactForm.$waiting" ng-show="!contactForm.$waiting">
++                  Send
++                </button>
++                <button id="waiting" type="submit" class="button radius" ng-disabled="true" ng-cloak ng-show="contactForm.$waiting">
++                  <i class="fa fa-refresh fa-spin"></i>
++                </button>
++              </div>
++            </div>
++          </div>
++        </div>
++      </form>
++    </div>
++
++    <div class="small-12 medium-3 medium-pull-1 columns">
++      <div class="side-nav" role="navigation">
++        <div id="map" class="side-nav-item small-text-center">
++          <div id='gmap_canvas' style='height:290px;width:290px;'></div>
++        </div>
++      </div>
++    </div>
++  </div>
++</div>
++
++           
++
++
++
++
++         </section>
++         <section id="footer" class="static_pages">
++  <div class="row">
++    <div class="small-3 small-push-1 columns">
++      <a id="logo-footer" class="logo-small hidetext" href="/">
++      <img alt="Gonebusy" src="https://beta-cdn2.gonebusy.com/assets/GonebusyFullLogo-inv-0001fe28d1483a1e4864d933ede056a4.svg" />
++</a>      <ul class="icons">
++        <li><a class="icon" href="https://github.com/gonebusy" title="GitHub" target="_blank"><i class="fa fa-github"></i></a></li>
++        <li><a class="icon" href="https://twitter.com/gonebusy" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
++        <li><a class="icon" href="https://www.facebook.com/OfficiallyGonebusy" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
++      </ul>
++    </div>
++    <div class="small-8 columns">
++      <div class="row">
++        <div class="small-4 columns">
++          <ul class="alt">
++            <li><a href="https://gonebusy.github.io/api">API</a></li>
++            <li><a href="https://gonebusy.github.io/libraries">Libraries</a></li>
++            <li><a href="https://gonebusy.github.io/blog">Blog</a></li>
++            <li><a href="/contact_us">Support</a></li>
++          </ul>
++        </div>
++        <div class="small-4 columns">
++          <ul class="alt">
++            <li><a href="/support/getting_started/">Support</a></li>
++            <li><a href="/pricing">Pricing</a></li>
++            <li><a href="/contact_us">Contact Us</a></li>
++          </ul>
++        </div>
++        <div class="small-4 columns">
++          <ul class="alt">
++            <li><a href="/">Home</a></li>
++            <li><a title='Login' data-reveal-id='login-modal'>Login</a></li>
++            <li><a class="dark-blue" title='Signup' data-reveal-id='signup-modal'>SIGN UP</a></li>
++            <li><a href="https://github.com/gonebusy/gonebusy.github.io/issues">Submit An Issue</a></li>
++          </ul>
++        </div>
++      </div>
++    </div>
++  </div>
++  <ul class="copyright">
++    <li><a target="_blank" href="/privacy_policy">Privacy</a></li>
++    <li><a target="_blank" href="/terms_and_conditions">Terms and Conditions</a></li>
++  </ul>
++  <ul class="copyright-light">
++    <li>Gonebusy &copy; 2016. All rights reserved.</li>
++  </ul>
++</section>
++
++       </div><!-- inner-wrap -->
++     </div><!-- off-canvas-wrap -->
++
++     <script src="https://beta-cdn1.gonebusy.com/assets/application-6898901d834478c29634678a2b69f6da.js"></script>
++     <script type='text/javascript' src='https://www.google.com/recaptcha/api.js?onload=vcRecaptchaApiLoaded&render=explicit' async defer></script>
++<script type='text/javascript' src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjOuYiitZ3Jzwae3wTRq00iAM0OVnKSxQ&amp;v=3.exp"></script>
++<script type='text/javascript'>function init_map(){var myOptions = {zoom:14,center:new google.maps.LatLng(40.720661,-73.96575280000002),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(40.7168961,-73.96575280000002)});infowindow = new google.maps.InfoWindow({content:'<strong>Gonebusy</strong><br>240 Kent Ave, Brooklyn, NY<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
++
++     <script src="https://beta-cdn2.gonebusy.com/assets/static_pages-1e278b81c148fd66a51f4662e15d67b6.js"></script>
++     <script src="https://beta-cdn1.gonebusy.com/assets/enquire.min-ba4e160fc46dade06958ce8936fa4566.js"></script>
++    
++    <!-- Stefan v0.1 START -->
++     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.min.css">
++     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.6/assets/owl.carousel.css">
++     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.6/assets/owl.theme.default.css">
++     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css">
++     <script src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.2.0/jquery.fitvids.min.js"></script>
++     <script src="//cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.min.js"></script>
++     <script src="//cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/vendor/jquery.easing.1.3.js"></script>
++     <script src="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.6/owl.carousel.js"></script>     
++     <link href="/gonebusy/css/custom.css" rel="stylesheet">
++     <script src="/gonebusy/js/custom.js"></script>
++     <!-- Stefan v0.1 END -->
++
++   </body>
++</html>
+diff --git a/css/custom.css b/css/custom.css
+index a8a0341..0e8c0e0 100644
+--- a/css/custom.css
++++ b/css/custom.css
+@@ -1,9 +1,108 @@
+-/*custom css*/
++/*custom css - stefan*/
++
++/*general global styles*/
++#cont {
++	margin-top: 8.4rem;
++}
++.row {
++	max-width: none;
++}
++#getting-started a,
++.off-canvas-list li a.button,
++.top-bar-section ul li>a.button,
++.static_pages .pricing #signup-get-started {
++	padding: 1rem 2.5rem !important;
++	border-radius: 2.5rem;
++}
++.off-canvas-list li a.button {
++	line-height: 1;
++}
++.top-bar-section ul li>a.button {
++	top: auto;
++	margin-top: 0.5rem;
++}
++/*general global end*/
++
++/*general header styles*/
++.header {}
++.top-desktop-row {
++	margin: 0;
++	padding: 1.2rem 0;
++}
++.header nav {
++	width: 100%;
++	padding: 0 10rem;
++}
++.top-bar .name {
++	height: auto;
++}
++.logo img {
++	margin: 0;
++	margin-top: -14px;
++	transform: translate(0,50%);	
++}
++.top-bar-section li:not(.has-form) a:not(.button) {
++	/*line-height: 8.7rem;*/
++} 
++/*general header end*/
++
++/*general footer styles*/
++#footer {}
++#footer a img {
++	width: 50%;
++}
++/*general footer end*/
++
++/*homepage start*/
++
++#section-1 {
++	height: auto;
++	padding-bottom: 0;
++}
++#section-3 {
++	padding-bottom: 5%;
++}
++#section-4 {
++	background-image: url(../img/bg.png);
++	background-repeat: no-repeat;
++	background-size: cover;
++	background-position: center;
++	background-color: transparent;
++	padding: 0 0 5rem;
++}
++#section-4-header {
++	margin-top: 50px;
++	margin-bottom: 36px;
++}
++#options {
++	text-align: center;
++	font-size: 0;
++	line-height: 0;
++}
++#options .item {
++	width: 33.33%;
++	display: inline-block;
++	vertical-align: top;
++	padding: 0 1.5rem;
++}
++#options .item .border {
++	border-radius: 10px;
++ 	background-color: #ffffff;
++  	border: solid 2px #eeeeee;
++  	overflow: hidden;
++  	padding: 3.6rem;
++}
++
++/*features section*/
+ #section-2 {
+ 	height: auto;
+ 	padding: 0 0 5%;
+ 	background-size: cover;
+ }
++#screenshot.features {
++	width: 90%;
++	margin: 0 auto;	
++}
+ #screenshot {
+ 	height: auto;
+ }
+@@ -32,7 +131,10 @@
+ }
+ .features .bx-wrapper {
+ 	border-radius: 10px;	
+-	overflow: hidden;
++	overflow: hidden;	
++}
++#screenshot.features .bx-wrapper {
++	box-shadow: 0px 10px 20px rgba(0,0,0,0.5);
+ }
+ .toggle-box {
+ 	padding: 3px 0;
+@@ -59,6 +161,9 @@
+ .toggle-box .toggle.selected .toggle-body {
+ 	
+ }
++/*features end*/
++
++/*how to section*/
+ .howto {
+ 	max-width: 100%;
+ 	margin: 0 auto;
+@@ -145,6 +250,11 @@
+ 	background-color: transparent;
+ 	border-color: transparent;
+ }
++/*how to end*/
++
++/*homepage end*/
++
++/*Platform page*/
+ .devices {	
+ 	position: relative;
+ 	max-width: 770px;
+@@ -190,7 +300,6 @@
+ 	position: absolute;
+ 	top: 50%;
+ 	transform: translate(0,-50%);
+-	/*background-color: white;*/
+ 	color: black;
+ 	cursor: pointer;
+ }
+@@ -222,31 +331,40 @@
+ .modeA .featuresA,
+ .modeB .featuresB {
+ 	position: absolute;
+-    top: 7.8%;
++    top: 7%;
+     left: 16%;
+-    width: 66.7% !important;
++    width: 66% !important;
+     /*height: 74.7%!important;*/
+     overflow: hidden;
+     background-color: #999;
+-    background-color: transparent;
++    background-color: #fff;
+     border: 10px solid #f1f1f1;
+     border-radius: 10px;
+-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
++    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+ }
+ .modeA .mobileA,
+ .modeB .mobileB {
+ 	position: absolute;
+-    top: 34.3%;
+-    left: 80.4%;
+-    width: 18.2% !important;
++    top: 34%;
++    left: 80%;
++    width: 18% !important;
+     /*height: 56.3%!important;*/
+     overflow: hidden;
+     background-color: #999;
+-    background-color: transparent;
++    background-color: #fff;
+     border: 10px solid #f1f1f1;
+     border-radius: 10px;
+-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
++    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
++}
++/*Platform end*/
++
++/*pricing start*/
++.pricing .guide-body {
++	padding: 0 1.5rem;
+ }
++/*pricing end*/
++
++/*bx slider modifiers*/
+ .bx-wrapper {
+ 	margin: 0;
+ 	border: 0;
+@@ -258,4 +376,125 @@
+ .modeA .featuresA .bx-wrapper,
+ .modeB .featuresB .bx-wrapper {
+ 	border: 1px solid #ccc;	
++}
++/*bx slider end*/
++
++/*mobile styles*/
++@media screen and (max-width: 1200px){
++	#cont {
++		margin-top: 0;
++	}
++	.top-bar {
++		height: 5rem;
++	}
++	.logo-small img {
++		margin: 0;
++		margin-left: 1rem;
++		margin-top: -1.5rem;
++	}
++	#hero-icons {
++		background-position: center;
++	}
++	#section-2 .left-collapse {
++		padding: 5rem 1.5rem 0;
++	}
++	#section-2 .right-collapse {
++		padding-left: 0;
++	}
++	.switchA, .switchB {
++		position: relative;
++		top: auto;
++		margin: 0 0 0;
++		left: auto;
++		right: auto;
++		transform: translate(0);
++		clear: both;
++		padding-top: 2rem;
++	}
++	.switchA img, .switchB img {
++		margin: 0 auto;
++		display: block;
++	}
++	.pricing .row.tiers .medium-4 {
++		margin-bottom: 2rem;
++	}
++	.ng-isolate-scope > div {
++		margin: 0 auto;
++	}
++	.side-nav {
++		display: none;
++	}
++	.static_pages .guide-body {
++		padding: 0 1.5rem;
++	}
++}
++@media screen and (max-width: 992px){
++	#section-1 {
++		background-size: cover;
++		background-position: center;
++	}
++	#section-2 h2 {
++		line-height: normal;
++		max-width: 560px;
++		margin: 0 auto;
++	}
++	#section-3 .right-collapse {
++		padding-left: 0;
++	}
++	.howto ul li {
++		width: 100%;
++		padding: 0 1.5rem 2rem;
++	}
++	#footer .small-3 {
++		width: 100%;
++		left: auto;
++	}
++	#footer a img {
++		display: block;
++		margin: 0 auto;
++		width: 50%;
++	}
++	#footer ul.icons {
++		text-align: center;
++	}
++	#footer .small-8 {
++		width: 100%;
++	}
++	#footer .small-8 .row {
++		text-align: center;
++		font-size: 0;
++		max-width: 640px;
++		margin: 0 auto;
++		padding: 0 1.5rem;
++	}
++	#footer .small-8 .small-4 {
++		float: none;
++		display: inline-block;
++		vertical-align: top;
++	}
++}
++@media screen and (max-width: 768px){
++	
++}
++@media screen and (max-width: 414px){
++	.logo-small img {
++		margin-top: 0.6rem;
++	}
++	.right-small .nav-icon {
++		line-height: 1.5;
++	}
++}
++@media screen and (max-width: 375px){
++	#section-1 .small-9 {
++		width: 100%;
++	}
++	#hero-icons {
++		background-size: 100% auto;
++	}
++	#section-2 h2 {
++		max-width: 320px;
++	}
++	#footer .small-8 .small-4 {
++		width: 100%;
++	}
+ }
+\ No newline at end of file
+diff --git a/feature-components.html b/feature-components.html
+new file mode 100644
+index 0000000..43bedbe
+--- /dev/null
++++ b/feature-components.html
+@@ -0,0 +1,232 @@
++<!-- homepage feature -->
++<div class="row with-section section-2-background">
++  <div class="small-12 small-centered columns my-collapse">
++    <div class="section" id="section-2">
++      <div class="row with-section">
++        <div id="section-2-header">
++          <h2>Never leave Slack to work with your Google Calendar.</h2>
++        </div>
++        <div class="medium-8 medium-push-3 columns right-collapse">
++          <div class="row with-section">
++            <div id="screenshot" class="features">
++              <ul id="featuresSlider">
++                <li>
++                  <img alt="screenshot" src="https://sandbox-cdn1.gonebusy.com/assets/TrelloTaco-60b9d1ec286437d232038b5f037b5f58.png" />
++                  <video id="vid" width="867" height="421" src="https://d2k1ftgv7pobq7.cloudfront.net/meta/u/res/images/6d8c22ff5dd11a88a2ce75a1c88e5575/slack-taco-delivery.mp4" loop></video>
++                </li>
++                <li><img alt="screenshot" src="https://sandbox-cdn1.gonebusy.com/assets/TrelloTaco-60b9d1ec286437d232038b5f037b5f58.png" /></li>
++                <li><img alt="screenshot" src="https://sandbox-cdn1.gonebusy.com/assets/TrelloTaco-60b9d1ec286437d232038b5f037b5f58.png" /></li>
++                <li><img alt="screenshot" src="https://sandbox-cdn1.gonebusy.com/assets/TrelloTaco-60b9d1ec286437d232038b5f037b5f58.png" /></li>
++              </ul>
++            </div>
++          </div>
++        </div>
++        <div class="medium-2 medium-pull-9 columns left-collapse">
++          <div class="row with-section">
++            <div class="toggle-box">
++              <div class="toggle selected">
++                <div class="calendar-icon"></div>
++                <div class="toggle-title"><img src="gonebusy/img/calendar-icon.png" srcset="gonebusy/img/calendar-icon@2x.png 2x,gonebusy/img/calendar-icon@3x.png 3x" class="Calendar-Icon">Manage Schedules</div>
++                <div class="toggle-body"><div class="inner">Get to your Hangout links
++                quickly, move meetings around, clear your schedule for
++                the day and much more...</div></div>
++              </div>
++              <div class="toggle">
++                <div class="calendar-icon"></div>
++                <div class="toggle-title"><img src="gonebusy/img/book-icon.png"
++     srcset="gonebusy/img/book-icon@2x.png 2x,
++             gonebusy/img/book-icon@3x.png 3x"
++     class="Book-Icon">Book Conference Rooms</div>
++                <div class="toggle-body"><div class="inner">Get to your Hangout links
++                quickly, move meetings around, clear your schedule for
++                the day and much more...</div></div>
++              </div>
++              <div class="toggle">
++                <div class="calendar-icon"></div>
++                <div class="toggle-title"><img src="gonebusy/img/invite-icon.png"
++     srcset="gonebusy/img/invite-icon@2x.png 2x,
++             gonebusy/img/invite-icon@3x.png 3x"
++     class="Invite-Icon">Invite Colleagues</div>
++                <div class="toggle-body"><div class="inner">Get to your Hangout links
++                quickly, move meetings around, clear your schedule for
++                the day and much more...</div></div>
++              </div>
++              <div class="toggle">
++                <div class="calendar-icon"></div>
++                <div class="toggle-title"><img src="gonebusy/img/channels-icon.png"
++     srcset="gonebusy/img/channels-icon@2x.png 2x,
++             gonebusy/img/channels-icon@3x.png 3x"
++     class="Channels-Icon">Create Public Channels</div>
++                <div class="toggle-body"><div class="inner">Get to your Hangout links
++                quickly, move meetings around, clear your schedule for
++                the day and much more...</div></div>
++              </div>
++            </div>
++          </div>
++        </div>
++      </div>
++    </div>
++  </div>
++</div>
++<!-- platform feature -->
++<div class="row with-section section-2-background">
++  <div class="small-12 small-centered columns my-collapse">
++    <div class="section" id="section-2">
++      <div class="row with-section">
++        <div id="section-2-header">
++          <h2>The only booking platform <div class="moveText"><div class="block customers">your customers</div><div class="block business">your business</div></div> will ever need.</h2>
++        </div>
++
++        <div class="transition">
++          
++          <div class="modeA">
++            <div class="hold">            
++              <div class="medium-7 medium-push-4 columns right-collapse">
++                <div class="row with-section">
++                  <div class="devices">
++                    <img src="gonebusy/img/mockups.png" srcset="gonebusy/img/mockups@2x.png 2x,gonebusy/img/mockups@3x.png 3x" class="device">
++                    <div id="screenshot" class="featuresA">
++                      <ul id="featuresASlider">
++                        <li><img alt="screenshot" src="https://sandbox-cdn2.gonebusy.com/assets/how-it-works-step-4-0e072678419389b2e4521b425689c2cd.png" /></li>
++                        <li><img alt="screenshot" src="https://sandbox-cdn2.gonebusy.com/assets/how-it-works-step-4-0e072678419389b2e4521b425689c2cd.png" /></li>
++                        <li><img alt="screenshot" src="https://sandbox-cdn2.gonebusy.com/assets/how-it-works-step-4-0e072678419389b2e4521b425689c2cd.png" /></li>
++                        <li><img alt="screenshot" src="https://sandbox-cdn2.gonebusy.com/assets/how-it-works-step-4-0e072678419389b2e4521b425689c2cd.png" /></li>
++                      </ul>
++                    </div>
++                    <div id="screenshot" class="mobileA">
++                      <ul id="mobileASlider">
++                        <li><img alt="screenshot" src="http://via.placeholder.com/137x241" /></li>
++                        <li><img alt="screenshot" src="http://via.placeholder.com/137x241" /></li>
++                        <li><img alt="screenshot" src="http://via.placeholder.com/137x241" /></li>
++                        <li><img alt="screenshot" src="http://via.placeholder.com/137x241" /></li>
++                      </ul>
++                    </div>
++                  </div>
++                </div>
++              </div>
++              <div class="medium-3 medium-pull-6 columns left-collapse">
++                <div class="row with-section">
++                  <div class="toggle-box">
++                    <div class="toggle selected">
++                      <div class="calendar-icon"></div>
++                      <div class="toggle-title"><img src="gonebusy/img/search-icon.png" srcset="gonebusy/img/search-icon@2x.png 2x,gonebusy/img/search-icon@3x.png 3x" class="Calendar-Icon">Find Availability</div>
++                      <div class="toggle-body"><div class="inner">Get to your Hangout links
++                      quickly, move meetings around, clear your schedule for
++                      the day and much more...</div></div>
++                    </div>
++                    <div class="toggle">
++                      <div class="calendar-icon"></div>
++                      <div class="toggle-title"><img src="gonebusy/img/book-icon.png"
++           srcset="gonebusy/img/book-icon@2x.png 2x,
++                   gonebusy/img/book-icon@3x.png 3x"
++           class="Book-Icon">Book</div>
++                      <div class="toggle-body"><div class="inner">Get to your Hangout links
++                      quickly, move meetings around, clear your schedule for
++                      the day and much more...</div></div>
++                    </div>
++                    <div class="toggle">
++                      <div class="calendar-icon"></div>
++                      <div class="toggle-title"><img src="gonebusy/img/rate-icon.png"
++           srcset="gonebusy/img/rate-icon@2x.png 2x,
++                   gonebusy/img/rate-icon@3x.png 3x"
++           class="Invite-Icon">Rate / Review / Manage</div>
++                      <div class="toggle-body"><div class="inner">Get to your Hangout links
++                      quickly, move meetings around, clear your schedule for
++                      the day and much more...</div></div>
++                    </div>
++                    <div class="toggle">
++                      <div class="calendar-icon"></div>
++                      <div class="toggle-title"><img src="gonebusy/img/notifications-icon.png"
++           srcset="gonebusy/img/notifications-icon@2x.png 2x,
++                   gonebusy/img/notifications-icon@3x.png 3x"
++           class="Channels-Icon">Recieve Notifications</div>
++                      <div class="toggle-body"><div class="inner">Get to your Hangout links
++                      quickly, move meetings around, clear your schedule for
++                      the day and much more...</div></div>
++                    </div>
++                  </div>
++                </div>
++              </div>
++              <div style="clear: both;"></div>
++            </div>            
++            <div class="switchA"><img src="gonebusy/img/sliderb.png" srcset="gonebusy/img/sliderb@2x.png 2x, gonebusy/img/sliderb@3x.png 3x" class="Slider" alt="Goto B"></div>           
++          </div>
++
++          <div class="modeB">
++            <div class="hold">            
++              <div class="medium-7 medium-push-4 columns right-collapse">
++                <div class="row with-section">
++                  <div class="devices">
++                    <img src="gonebusy/img/mockups.png" srcset="gonebusy/img/mockups@2x.png 2x,gonebusy/img/mockups@3x.png 3x" class="device">
++                    <div id="screenshot" class="featuresB">
++                      <ul id="featuresBSlider">
++                        <li><img alt="screenshot" src="https://sandbox-cdn2.gonebusy.com/assets/how-it-works-step-4-0e072678419389b2e4521b425689c2cd.png" /></li>
++                        <li><img alt="screenshot" src="https://sandbox-cdn2.gonebusy.com/assets/how-it-works-step-4-0e072678419389b2e4521b425689c2cd.png" /></li>
++                        <li><img alt="screenshot" src="https://sandbox-cdn2.gonebusy.com/assets/how-it-works-step-4-0e072678419389b2e4521b425689c2cd.png" /></li>
++                        <li><img alt="screenshot" src="https://sandbox-cdn2.gonebusy.com/assets/how-it-works-step-4-0e072678419389b2e4521b425689c2cd.png" /></li>
++                      </ul>
++                    </div>
++                    <div id="screenshot" class="mobileB">
++                      <ul id="mobileBSlider">
++                        <li><img alt="screenshot" src="http://via.placeholder.com/137x241" /></li>
++                        <li><img alt="screenshot" src="http://via.placeholder.com/137x241" /></li>
++                        <li><img alt="screenshot" src="http://via.placeholder.com/137x241" /></li>
++                        <li><img alt="screenshot" src="http://via.placeholder.com/137x241" /></li>
++                      </ul>
++                    </div>
++                  </div>
++                </div>
++              </div>
++              <div class="medium-3 medium-pull-8 columns left-collapse">
++                <div class="row with-section">
++                  <div class="toggle-box">
++                    <div class="toggle selected">
++                      <div class="calendar-icon"></div>
++                      <div class="toggle-title"><img src="gonebusy/img/search-icon.png" srcset="gonebusy/img/search-icon@2x.png 2x,gonebusy/img/search-icon@3x.png 3x" class="Calendar-Icon">Find Availability</div>
++                      <div class="toggle-body"><div class="inner">Get to your Hangout links
++                      quickly, move meetings around, clear your schedule for
++                      the day and much more...</div></div>
++                    </div>
++                    <div class="toggle">
++                      <div class="calendar-icon"></div>
++                      <div class="toggle-title"><img src="gonebusy/img/book-icon.png"
++           srcset="gonebusy/img/book-icon@2x.png 2x,
++                   gonebusy/img/book-icon@3x.png 3x"
++           class="Book-Icon">Book</div>
++                      <div class="toggle-body"><div class="inner">Get to your Hangout links
++                      quickly, move meetings around, clear your schedule for
++                      the day and much more...</div></div>
++                    </div>
++                    <div class="toggle">
++                      <div class="calendar-icon"></div>
++                      <div class="toggle-title"><img src="gonebusy/img/rate-icon.png"
++           srcset="gonebusy/img/rate-icon@2x.png 2x,
++                   gonebusy/img/rate-icon@3x.png 3x"
++           class="Invite-Icon">Rate / Review / Manage</div>
++                      <div class="toggle-body"><div class="inner">Get to your Hangout links
++                      quickly, move meetings around, clear your schedule for
++                      the day and much more...</div></div>
++                    </div>
++                    <div class="toggle">
++                      <div class="calendar-icon"></div>
++                      <div class="toggle-title"><img src="gonebusy/img/notifications-icon.png"
++           srcset="gonebusy/img/notifications-icon@2x.png 2x,
++                   gonebusy/img/notifications-icon@3x.png 3x"
++           class="Channels-Icon">Recieve Notifications</div>
++                      <div class="toggle-body"><div class="inner">Get to your Hangout links
++                      quickly, move meetings around, clear your schedule for
++                      the day and much more...</div></div>
++                    </div>
++                  </div>
++                </div>
++              </div>
++            </div>            
++            <div class="switchB"><img src="gonebusy/img/slidera.png" srcset="gonebusy/img/slidera@2x.png 2x, gonebusy/img/slidera@3x.png 3x" class="Slider" alt="Goto A"></div>
++          </div>  
++
++        </div>
++
++      </div>
++    </div>
++  </div>
++</div>
+\ No newline at end of file
+diff --git a/img/bg.png b/img/bg.png
+new file mode 100644
+index 0000000..e9461f3
+Binary files /dev/null and b/img/bg.png differ
+diff --git a/img/bg@2x.png b/img/bg@2x.png
+new file mode 100644
+index 0000000..b43b4fe
+Binary files /dev/null and b/img/bg@2x.png differ
+diff --git a/img/bg@3x.png b/img/bg@3x.png
+new file mode 100644
+index 0000000..bf60281
+Binary files /dev/null and b/img/bg@3x.png differ
+diff --git a/index.html b/index.html
+index b8d201d..b215ff7 100644
+--- a/index.html
++++ b/index.html
+@@ -470,17 +470,26 @@
+   </div>
+ </div>
+ 
+-<div class="row with-section">
++<!-- <div class="row with-section">
+   <div class="small-12 small-centered columns my-collapse">
+     <div class="section" id="section-4">
+       <div class="row with-section">
+         <div id="section-4-header">
+           <h2>Choose a plan that's right for you</h2>
+         </div>
++        <div class="medium-10 medium-centered columns right-collapse">
++          <div class="row with-section">            
++            <ul id="options">
++              <li class="item"><div class="border"><img alt="screenshot" src="https://sandbox-cdn2.gonebusy.com/assets/how-it-works-step-4-0e072678419389b2e4521b425689c2cd.png" /></div></li>
++              <li class="item"><div class="border"><img alt="screenshot" src="https://sandbox-cdn2.gonebusy.com/assets/how-it-works-step-4-0e072678419389b2e4521b425689c2cd.png" /></div></li>
++              <li class="item"><div class="border"><img alt="screenshot" src="https://sandbox-cdn2.gonebusy.com/assets/how-it-works-step-4-0e072678419389b2e4521b425689c2cd.png" /></div></li>                
++            </ul>            
++          </div>
++        </div>
+       </div>
+     </div>
+   </div>
+-</div>
++</div> -->
+ 
+ 
+          </section>
+@@ -488,7 +497,7 @@
+   <div class="row">
+     <div class="small-3 small-push-1 columns">
+       <a id="logo-footer" class="logo-small hidetext" href="/">
+-      <img alt="Gonebusy" src="https://sandbox-cdn3.gonebusy.com/assets/GonebusyFullLogo-inv-4e4a1d11efa1a47faaad92fee57a9627.png" />
++      <img alt="Gonebusy" src="https://sandbox-cdn3.gonebusy.com/assets/GonebusyFullLogo-inv-29394badbf30d2c7ff2ec4860e5a60ce.svg">
+ </a>      <ul class="icons">
+         <li><a class="icon" href="https://github.com/gonebusy" title="GitHub" target="_blank"><i class="fa fa-github"></i></a></li>
+         <li><a class="icon" href="https://twitter.com/gonebusy" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
+@@ -549,8 +558,8 @@
+      <script src="//cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/vendor/jquery.easing.1.3.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.6/owl.carousel.js"></script>     
+-     <link href="gonebusy/css/custom.css" rel="stylesheet">
+-     <script src="gonebusy/js/custom.js"></script>
++     <link href="/gonebusy/css/custom.css" rel="stylesheet">
++     <script src="/gonebusy/js/custom.js"></script>
+      <!-- Stefan v0.1 END -->
+ 
+    </body>
+diff --git a/js/custom.js b/js/custom.js
+index db51b97..42e01c8 100644
+--- a/js/custom.js
++++ b/js/custom.js
+@@ -6,6 +6,7 @@
+ 	// homepage Start
+ 	if($('.homePage').length){		
+ 		const 
++		slideTimer = [12000,0,0,0],
+ 		features = $('#featuresSlider'),
+ 		toggle = $('.toggle-box .toggle');
+ 		features.bxSlider({
+@@ -16,14 +17,20 @@
+ 			video: true,
+ 			auto: true,
+ 			pause: 4000,
+-			autoHover: true,		
++			autoHover: true,
++			autoStart: false,		
+ 			onSlideBefore: function($slideElement, oldIndex, newIndex){
+ 				transit(newIndex, [features], toggle);
+ 			},
+-			onSliderLoad: function($slideElement, oldIndex, newIndex){			
+-				autoPlay($slideElement, oldIndex, newIndex);
++			onSlideAfter: function($slideElement, oldIndex, newIndex){
++				autoPlay(features, newIndex, oldIndex);
++				pauseForVid(newIndex, features, slideTimer);
++			},
++			onSliderLoad: function(currentIndex){			
++				autoPlay(features, currentIndex, 0);
++				pauseForVid(0, features, slideTimer);				
+ 			}
+-		});
++		});		
+ 		setUp([features], toggle);		
+ 	}
+ 	// home page End
+@@ -55,8 +62,8 @@
+ 			onSlideAfter: function($slideElement, oldIndex, newIndex){
+ 								
+ 			},
+-			onSliderLoad: function($slideElement, oldIndex, newIndex){			
+-				autoPlay($slideElement, oldIndex, newIndex);
++			onSliderLoad: function(currentIndex){			
++				autoPlay(featuresA, currentIndex, 0);
+ 			}
+ 		});
+ 		mobileA.bxSlider({
+@@ -84,8 +91,8 @@
+ 			onSlideAfter: function($slideElement, oldIndex, newIndex){
+ 								
+ 			},
+-			onSliderLoad: function($slideElement, oldIndex, newIndex){		
+-				autoPlay($slideElement, oldIndex, newIndex);
++			onSliderLoad: function(currentIndex){		
++				autoPlay(featuresB, currentIndex, 0);
+ 			}
+ 		});
+ 		mobileB.bxSlider({
+@@ -148,12 +155,31 @@
+ 		el.addClass('selected').prev().addClass('noBorder');		
+ 		el.find('.toggle-body').animate({height:innerHeight},{duration:timing,queue:false});
+ 	}
+-	function autoPlay($ele, from, to) {
+-      const 
+-      vid = document.querySelector('#vid');
+-      if (vid) {
+-        vid.play();
+-      }
++	function autoPlay(slider, index, old) {		
++		const 
++		vid = slider.getSlideElement(index),
++		vidPrev = slider.getSlideElement(old),
++		vidPrevEl = vidPrev.find('video'),
++		vidEl = vid.find('video');
++		if(vidPrevEl.length){
++			vidPrevEl.get(0).pause();
++			console.log(vidPrev);	
++		}		
++		if (vidEl.length) {
++			vidEl.get(0).play();
++		}
+     }
++    function pauseForVid(current, slider, wait) {
++	    	const
++	    	vid = current;
++	    	slider.stopAuto();
++	    	if(slider.find('li[aria-hidden="false"] video').length){    		
++	    		setTimeout(function(){
++					slider.startAuto();
++				}, wait[vid]);
++	    	} else {
++	    		slider.startAuto();
++	    	}
++	    }
+ 
+ })(jQuery);
+\ No newline at end of file
+diff --git a/platform.html b/platform.html
+index e0cce18..47c1cdf 100644
+--- a/platform.html
++++ b/platform.html
+@@ -388,144 +388,148 @@
+         <div class="transition">
+           
+           <div class="modeA">
+-            <div class="switchA"><img src="gonebusy/img/sliderb.png" srcset="gonebusy/img/sliderb@2x.png 2x, gonebusy/img/sliderb@3x.png 3x" class="Slider" alt="Goto B"></div>
+-            <div class="medium-7 medium-push-4 columns right-collapse">
+-              <div class="row with-section">
+-                <div class="devices">
+-                  <img src="gonebusy/img/mockups.png" srcset="gonebusy/img/mockups@2x.png 2x,gonebusy/img/mockups@3x.png 3x" class="device">
+-                  <div id="screenshot" class="featuresA">
+-                    <ul id="featuresASlider">
+-                      <li><img alt="screenshot" src="https://sandbox-cdn2.gonebusy.com/assets/how-it-works-step-4-0e072678419389b2e4521b425689c2cd.png" /></li>
+-                      <li><img alt="screenshot" src="https://sandbox-cdn2.gonebusy.com/assets/how-it-works-step-4-0e072678419389b2e4521b425689c2cd.png" /></li>
+-                      <li><img alt="screenshot" src="https://sandbox-cdn2.gonebusy.com/assets/how-it-works-step-4-0e072678419389b2e4521b425689c2cd.png" /></li>
+-                      <li><img alt="screenshot" src="https://sandbox-cdn2.gonebusy.com/assets/how-it-works-step-4-0e072678419389b2e4521b425689c2cd.png" /></li>
+-                    </ul>
+-                  </div>
+-                  <div id="screenshot" class="mobileA">
+-                    <ul id="mobileASlider">
+-                      <li><img alt="screenshot" src="http://via.placeholder.com/137x241" /></li>
+-                      <li><img alt="screenshot" src="http://via.placeholder.com/137x241" /></li>
+-                      <li><img alt="screenshot" src="http://via.placeholder.com/137x241" /></li>
+-                      <li><img alt="screenshot" src="http://via.placeholder.com/137x241" /></li>
+-                    </ul>
++            <div class="hold">            
++              <div class="medium-7 medium-push-4 columns right-collapse">
++                <div class="row with-section">
++                  <div class="devices">
++                    <img src="gonebusy/img/mockups.png" srcset="gonebusy/img/mockups@2x.png 2x,gonebusy/img/mockups@3x.png 3x" class="device">
++                    <div id="screenshot" class="featuresA">
++                      <ul id="featuresASlider">
++                        <li><img alt="screenshot" src="https://sandbox-cdn2.gonebusy.com/assets/how-it-works-step-4-0e072678419389b2e4521b425689c2cd.png" /></li>
++                        <li><img alt="screenshot" src="https://sandbox-cdn2.gonebusy.com/assets/how-it-works-step-4-0e072678419389b2e4521b425689c2cd.png" /></li>
++                        <li><img alt="screenshot" src="https://sandbox-cdn2.gonebusy.com/assets/how-it-works-step-4-0e072678419389b2e4521b425689c2cd.png" /></li>
++                        <li><img alt="screenshot" src="https://sandbox-cdn2.gonebusy.com/assets/how-it-works-step-4-0e072678419389b2e4521b425689c2cd.png" /></li>
++                      </ul>
++                    </div>
++                    <div id="screenshot" class="mobileA">
++                      <ul id="mobileASlider">
++                        <li><img alt="screenshot" src="http://via.placeholder.com/137x241" /></li>
++                        <li><img alt="screenshot" src="http://via.placeholder.com/137x241" /></li>
++                        <li><img alt="screenshot" src="http://via.placeholder.com/137x241" /></li>
++                        <li><img alt="screenshot" src="http://via.placeholder.com/137x241" /></li>
++                      </ul>
++                    </div>
+                   </div>
+                 </div>
+               </div>
+-            </div>
+-            <div class="medium-3 medium-pull-6 columns left-collapse">
+-              <div class="row with-section">
+-                <div class="toggle-box">
+-                  <div class="toggle selected">
+-                    <div class="calendar-icon"></div>
+-                    <div class="toggle-title"><img src="gonebusy/img/search-icon.png" srcset="gonebusy/img/search-icon@2x.png 2x,gonebusy/img/search-icon@3x.png 3x" class="Calendar-Icon">Find Availability</div>
+-                    <div class="toggle-body"><div class="inner">Get to your Hangout links
+-                    quickly, move meetings around, clear your schedule for
+-                    the day and much more...</div></div>
+-                  </div>
+-                  <div class="toggle">
+-                    <div class="calendar-icon"></div>
+-                    <div class="toggle-title"><img src="gonebusy/img/book-icon.png"
+-         srcset="gonebusy/img/book-icon@2x.png 2x,
+-                 gonebusy/img/book-icon@3x.png 3x"
+-         class="Book-Icon">Book</div>
+-                    <div class="toggle-body"><div class="inner">Get to your Hangout links
+-                    quickly, move meetings around, clear your schedule for
+-                    the day and much more...</div></div>
+-                  </div>
+-                  <div class="toggle">
+-                    <div class="calendar-icon"></div>
+-                    <div class="toggle-title"><img src="gonebusy/img/rate-icon.png"
+-         srcset="gonebusy/img/rate-icon@2x.png 2x,
+-                 gonebusy/img/rate-icon@3x.png 3x"
+-         class="Invite-Icon">Rate / Review / Manage</div>
+-                    <div class="toggle-body"><div class="inner">Get to your Hangout links
+-                    quickly, move meetings around, clear your schedule for
+-                    the day and much more...</div></div>
+-                  </div>
+-                  <div class="toggle">
+-                    <div class="calendar-icon"></div>
+-                    <div class="toggle-title"><img src="gonebusy/img/notifications-icon.png"
+-         srcset="gonebusy/img/notifications-icon@2x.png 2x,
+-                 gonebusy/img/notifications-icon@3x.png 3x"
+-         class="Channels-Icon">Recieve Notifications</div>
+-                    <div class="toggle-body"><div class="inner">Get to your Hangout links
+-                    quickly, move meetings around, clear your schedule for
+-                    the day and much more...</div></div>
++              <div class="medium-3 medium-pull-6 columns left-collapse">
++                <div class="row with-section">
++                  <div class="toggle-box">
++                    <div class="toggle selected">
++                      <div class="calendar-icon"></div>
++                      <div class="toggle-title"><img src="gonebusy/img/search-icon.png" srcset="gonebusy/img/search-icon@2x.png 2x,gonebusy/img/search-icon@3x.png 3x" class="Calendar-Icon">Find Availability</div>
++                      <div class="toggle-body"><div class="inner">Get to your Hangout links
++                      quickly, move meetings around, clear your schedule for
++                      the day and much more...</div></div>
++                    </div>
++                    <div class="toggle">
++                      <div class="calendar-icon"></div>
++                      <div class="toggle-title"><img src="gonebusy/img/book-icon.png"
++           srcset="gonebusy/img/book-icon@2x.png 2x,
++                   gonebusy/img/book-icon@3x.png 3x"
++           class="Book-Icon">Book</div>
++                      <div class="toggle-body"><div class="inner">Get to your Hangout links
++                      quickly, move meetings around, clear your schedule for
++                      the day and much more...</div></div>
++                    </div>
++                    <div class="toggle">
++                      <div class="calendar-icon"></div>
++                      <div class="toggle-title"><img src="gonebusy/img/rate-icon.png"
++           srcset="gonebusy/img/rate-icon@2x.png 2x,
++                   gonebusy/img/rate-icon@3x.png 3x"
++           class="Invite-Icon">Rate / Review / Manage</div>
++                      <div class="toggle-body"><div class="inner">Get to your Hangout links
++                      quickly, move meetings around, clear your schedule for
++                      the day and much more...</div></div>
++                    </div>
++                    <div class="toggle">
++                      <div class="calendar-icon"></div>
++                      <div class="toggle-title"><img src="gonebusy/img/notifications-icon.png"
++           srcset="gonebusy/img/notifications-icon@2x.png 2x,
++                   gonebusy/img/notifications-icon@3x.png 3x"
++           class="Channels-Icon">Recieve Notifications</div>
++                      <div class="toggle-body"><div class="inner">Get to your Hangout links
++                      quickly, move meetings around, clear your schedule for
++                      the day and much more...</div></div>
++                    </div>
+                   </div>
+                 </div>
+               </div>
+-            </div>
+-            <div style="clear: both;"></div>
++              <div style="clear: both;"></div>
++            </div>            
++            <div class="switchA"><img src="gonebusy/img/sliderb.png" srcset="gonebusy/img/sliderb@2x.png 2x, gonebusy/img/sliderb@3x.png 3x" class="Slider" alt="Goto B"></div>           
+           </div>
+ 
+           <div class="modeB">
+-            <div class="switchB"><img src="gonebusy/img/slidera.png" srcset="gonebusy/img/slidera@2x.png 2x, gonebusy/img/slidera@3x.png 3x" class="Slider" alt="Goto A"></div>
+-            <div class="medium-7 medium-push-4 columns right-collapse">
+-              <div class="row with-section">
+-                <div class="devices">
+-                  <img src="gonebusy/img/mockups.png" srcset="gonebusy/img/mockups@2x.png 2x,gonebusy/img/mockups@3x.png 3x" class="device">
+-                  <div id="screenshot" class="featuresB">
+-                    <ul id="featuresBSlider">
+-                      <li><img alt="screenshot" src="https://sandbox-cdn2.gonebusy.com/assets/how-it-works-step-4-0e072678419389b2e4521b425689c2cd.png" /></li>
+-                      <li><img alt="screenshot" src="https://sandbox-cdn2.gonebusy.com/assets/how-it-works-step-4-0e072678419389b2e4521b425689c2cd.png" /></li>
+-                      <li><img alt="screenshot" src="https://sandbox-cdn2.gonebusy.com/assets/how-it-works-step-4-0e072678419389b2e4521b425689c2cd.png" /></li>
+-                      <li><img alt="screenshot" src="https://sandbox-cdn2.gonebusy.com/assets/how-it-works-step-4-0e072678419389b2e4521b425689c2cd.png" /></li>
+-                    </ul>
+-                  </div>
+-                  <div id="screenshot" class="mobileB">
+-                    <ul id="mobileBSlider">
+-                      <li><img alt="screenshot" src="http://via.placeholder.com/137x241" /></li>
+-                      <li><img alt="screenshot" src="http://via.placeholder.com/137x241" /></li>
+-                      <li><img alt="screenshot" src="http://via.placeholder.com/137x241" /></li>
+-                      <li><img alt="screenshot" src="http://via.placeholder.com/137x241" /></li>
+-                    </ul>
++            <div class="hold">            
++              <div class="medium-7 medium-push-4 columns right-collapse">
++                <div class="row with-section">
++                  <div class="devices">
++                    <img src="gonebusy/img/mockups.png" srcset="gonebusy/img/mockups@2x.png 2x,gonebusy/img/mockups@3x.png 3x" class="device">
++                    <div id="screenshot" class="featuresB">
++                      <ul id="featuresBSlider">
++                        <li><img alt="screenshot" src="https://sandbox-cdn2.gonebusy.com/assets/how-it-works-step-4-0e072678419389b2e4521b425689c2cd.png" /></li>
++                        <li><img alt="screenshot" src="https://sandbox-cdn2.gonebusy.com/assets/how-it-works-step-4-0e072678419389b2e4521b425689c2cd.png" /></li>
++                        <li><img alt="screenshot" src="https://sandbox-cdn2.gonebusy.com/assets/how-it-works-step-4-0e072678419389b2e4521b425689c2cd.png" /></li>
++                        <li><img alt="screenshot" src="https://sandbox-cdn2.gonebusy.com/assets/how-it-works-step-4-0e072678419389b2e4521b425689c2cd.png" /></li>
++                      </ul>
++                    </div>
++                    <div id="screenshot" class="mobileB">
++                      <ul id="mobileBSlider">
++                        <li><img alt="screenshot" src="http://via.placeholder.com/137x241" /></li>
++                        <li><img alt="screenshot" src="http://via.placeholder.com/137x241" /></li>
++                        <li><img alt="screenshot" src="http://via.placeholder.com/137x241" /></li>
++                        <li><img alt="screenshot" src="http://via.placeholder.com/137x241" /></li>
++                      </ul>
++                    </div>
+                   </div>
+                 </div>
+               </div>
+-            </div>
+-            <div class="medium-3 medium-pull-8 columns left-collapse">
+-              <div class="row with-section">
+-                <div class="toggle-box">
+-                  <div class="toggle selected">
+-                    <div class="calendar-icon"></div>
+-                    <div class="toggle-title"><img src="gonebusy/img/search-icon.png" srcset="gonebusy/img/search-icon@2x.png 2x,gonebusy/img/search-icon@3x.png 3x" class="Calendar-Icon">Find Availability</div>
+-                    <div class="toggle-body"><div class="inner">Get to your Hangout links
+-                    quickly, move meetings around, clear your schedule for
+-                    the day and much more...</div></div>
+-                  </div>
+-                  <div class="toggle">
+-                    <div class="calendar-icon"></div>
+-                    <div class="toggle-title"><img src="gonebusy/img/book-icon.png"
+-         srcset="gonebusy/img/book-icon@2x.png 2x,
+-                 gonebusy/img/book-icon@3x.png 3x"
+-         class="Book-Icon">Book</div>
+-                    <div class="toggle-body"><div class="inner">Get to your Hangout links
+-                    quickly, move meetings around, clear your schedule for
+-                    the day and much more...</div></div>
+-                  </div>
+-                  <div class="toggle">
+-                    <div class="calendar-icon"></div>
+-                    <div class="toggle-title"><img src="gonebusy/img/rate-icon.png"
+-         srcset="gonebusy/img/rate-icon@2x.png 2x,
+-                 gonebusy/img/rate-icon@3x.png 3x"
+-         class="Invite-Icon">Rate / Review / Manage</div>
+-                    <div class="toggle-body"><div class="inner">Get to your Hangout links
+-                    quickly, move meetings around, clear your schedule for
+-                    the day and much more...</div></div>
+-                  </div>
+-                  <div class="toggle">
+-                    <div class="calendar-icon"></div>
+-                    <div class="toggle-title"><img src="gonebusy/img/notifications-icon.png"
+-         srcset="gonebusy/img/notifications-icon@2x.png 2x,
+-                 gonebusy/img/notifications-icon@3x.png 3x"
+-         class="Channels-Icon">Recieve Notifications</div>
+-                    <div class="toggle-body"><div class="inner">Get to your Hangout links
+-                    quickly, move meetings around, clear your schedule for
+-                    the day and much more...</div></div>
++              <div class="medium-3 medium-pull-8 columns left-collapse">
++                <div class="row with-section">
++                  <div class="toggle-box">
++                    <div class="toggle selected">
++                      <div class="calendar-icon"></div>
++                      <div class="toggle-title"><img src="gonebusy/img/search-icon.png" srcset="gonebusy/img/search-icon@2x.png 2x,gonebusy/img/search-icon@3x.png 3x" class="Calendar-Icon">Find Availability</div>
++                      <div class="toggle-body"><div class="inner">Get to your Hangout links
++                      quickly, move meetings around, clear your schedule for
++                      the day and much more...</div></div>
++                    </div>
++                    <div class="toggle">
++                      <div class="calendar-icon"></div>
++                      <div class="toggle-title"><img src="gonebusy/img/book-icon.png"
++           srcset="gonebusy/img/book-icon@2x.png 2x,
++                   gonebusy/img/book-icon@3x.png 3x"
++           class="Book-Icon">Book</div>
++                      <div class="toggle-body"><div class="inner">Get to your Hangout links
++                      quickly, move meetings around, clear your schedule for
++                      the day and much more...</div></div>
++                    </div>
++                    <div class="toggle">
++                      <div class="calendar-icon"></div>
++                      <div class="toggle-title"><img src="gonebusy/img/rate-icon.png"
++           srcset="gonebusy/img/rate-icon@2x.png 2x,
++                   gonebusy/img/rate-icon@3x.png 3x"
++           class="Invite-Icon">Rate / Review / Manage</div>
++                      <div class="toggle-body"><div class="inner">Get to your Hangout links
++                      quickly, move meetings around, clear your schedule for
++                      the day and much more...</div></div>
++                    </div>
++                    <div class="toggle">
++                      <div class="calendar-icon"></div>
++                      <div class="toggle-title"><img src="gonebusy/img/notifications-icon.png"
++           srcset="gonebusy/img/notifications-icon@2x.png 2x,
++                   gonebusy/img/notifications-icon@3x.png 3x"
++           class="Channels-Icon">Recieve Notifications</div>
++                      <div class="toggle-body"><div class="inner">Get to your Hangout links
++                      quickly, move meetings around, clear your schedule for
++                      the day and much more...</div></div>
++                    </div>
+                   </div>
+                 </div>
+               </div>
+-            </div>
++            </div>            
++            <div class="switchB"><img src="gonebusy/img/slidera.png" srcset="gonebusy/img/slidera@2x.png 2x, gonebusy/img/slidera@3x.png 3x" class="Slider" alt="Goto A"></div>
+           </div>  
+ 
+         </div>
+@@ -558,17 +562,26 @@
+   </div>
+ </div>
+ 
+-<div class="row with-section">
++<!-- <div class="row with-section">
+   <div class="small-12 small-centered columns my-collapse">
+     <div class="section" id="section-4">
+       <div class="row with-section">
+         <div id="section-4-header">
+           <h2>Choose a plan that's right for you</h2>
+         </div>
++        <div class="medium-10 medium-centered columns right-collapse">
++          <div class="row with-section">            
++            <ul id="options">
++              <li class="item"><div class="border"><img alt="screenshot" src="https://sandbox-cdn2.gonebusy.com/assets/how-it-works-step-4-0e072678419389b2e4521b425689c2cd.png" /></div></li>
++              <li class="item"><div class="border"><img alt="screenshot" src="https://sandbox-cdn2.gonebusy.com/assets/how-it-works-step-4-0e072678419389b2e4521b425689c2cd.png" /></div></li>
++              <li class="item"><div class="border"><img alt="screenshot" src="https://sandbox-cdn2.gonebusy.com/assets/how-it-works-step-4-0e072678419389b2e4521b425689c2cd.png" /></div></li>                
++            </ul>            
++          </div>
++        </div>
+       </div>
+     </div>
+   </div>
+-</div>
++</div> -->
+ 
+ 
+          </section>
+@@ -576,7 +589,7 @@
+   <div class="row">
+     <div class="small-3 small-push-1 columns">
+       <a id="logo-footer" class="logo-small hidetext" href="/">
+-      <img alt="Gonebusy" src="https://sandbox-cdn3.gonebusy.com/assets/GonebusyFullLogo-inv-4e4a1d11efa1a47faaad92fee57a9627.png" />
++      <img alt="Gonebusy" src="https://sandbox-cdn3.gonebusy.com/assets/GonebusyFullLogo-inv-29394badbf30d2c7ff2ec4860e5a60ce.svg">
+ </a>      <ul class="icons">
+         <li><a class="icon" href="https://github.com/gonebusy" title="GitHub" target="_blank"><i class="fa fa-github"></i></a></li>
+         <li><a class="icon" href="https://twitter.com/gonebusy" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
+@@ -637,8 +650,8 @@
+      <script src="//cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/vendor/jquery.easing.1.3.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.6/owl.carousel.js"></script>     
+-     <link href="gonebusy/css/custom.css" rel="stylesheet">
+-     <script src="gonebusy/js/custom.js"></script>
++     <link href="/gonebusy/css/custom.css" rel="stylesheet">
++     <script src="/gonebusy/js/custom.js"></script>
+      <!-- Stefan v0.1 END -->
+ 
+    </body>
+diff --git a/pricing.html b/pricing.html
+index e7e2d25..631b157 100644
+--- a/pricing.html
++++ b/pricing.html
+@@ -512,5 +512,20 @@
+      
+      <script src="https://sandbox-cdn4.gonebusy.com/assets/static_pages-98b629d581dc2176049c9d8abd6dac49.js"></script>
+      <script src="https://sandbox-cdn3.gonebusy.com/assets/enquire.min-227705dc86c458036ed2e008710d5dfb.js"></script>
++
++     <!-- Stefan v0.1 START -->
++     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.min.css">
++     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.6/assets/owl.carousel.css">
++     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.6/assets/owl.theme.default.css">
++     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css">
++     <script src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.2.0/jquery.fitvids.min.js"></script>
++     <script src="//cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.min.js"></script>
++     <script src="//cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/vendor/jquery.easing.1.3.js"></script>
++     <script src="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.6/owl.carousel.js"></script>     
++     <link href="/gonebusy/css/custom.css" rel="stylesheet">
++     <script src="/gonebusy/js/custom.js"></script>
++     <!-- Stefan v0.1 END -->
++
++
+    </body>
+ </html>
+\ No newline at end of file
+diff --git a/js/support.html b/support.html
+similarity index 55%
+rename from js/support.html
+rename to support.html
+index 95de6bc..994de80 100644
+--- a/js/support.html
++++ b/support.html
+@@ -1,32 +1,38 @@
++
++
++
++
+ <!DOCTYPE html>
+ <!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+ <!--[if gt IE 8]><!--><html class="no-js" lang="en" ><!--<![endif]-->
+ <head>
+   <meta charset="utf-8">
++<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"0746a72f03","applicationID":"7195857","transactionName":"cwoPQ0BWXVlXRU4XTEAVDkVGFllaX1I=","queueTime":0,"applicationTime":27,"agent":""}</script>
++<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1059.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+-  <link rel="shortcut icon" type="image/x-icon" href="https://sandbox-cdn4.gonebusy.com/assets/favicon-8d865c7995bfe501f272aab7f8842d1b.ico" />
+-  <link rel="apple-touch-icon" type="image/png" href="https://sandbox-cdn1.gonebusy.com/assets/gb-icon-144x144-7e1d8204f893cdcd4d54a6aa3d8240d0.png" />
++  <link rel="shortcut icon" type="image/x-icon" href="https://beta-cdn2.gonebusy.com/assets/favicon-886019e737c8b8954e475832bfb365c5.ico" />
++  <link rel="apple-touch-icon" type="image/png" href="https://beta-cdn2.gonebusy.com/assets/gb-icon-144x144-29e4bfda5426b5d89b9a3e4a6ed4495c.png" />
+   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
+     rel="stylesheet"
+     integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1"
+     crossorigin="anonymous">
+-  <link rel="stylesheet" media="all" href="https://sandbox-cdn4.gonebusy.com/assets/application-649e77b4c03715d935aa4e2e223aee05.css" />
+-  <script src="https://sandbox-cdn3.gonebusy.com/assets/modernizr-bc7041c14269fe14a215b4b72415081b.js"></script>
++  <link rel="stylesheet" media="all" href="https://beta-cdn1.gonebusy.com/assets/application-79a16106b0c8c08eb17a7528f4240fc7.css" />
++  <script src="https://beta-cdn2.gonebusy.com/assets/modernizr-d118d2162094c975646904938b308cba.js"></script>
+ <!--[if lt IE 9]>
+-  <script src="https://sandbox-cdn1.gonebusy.com/assets/html5shiv-723836c3908be49a77fabf4d72b303e7.js"></script>
+-  <script src="https://sandbox-cdn3.gonebusy.com/assets/respond.min-50185df977f4a395efd4ba7315e5dfe7.js"></script>
++  <script src="https://beta-cdn2.gonebusy.com/assets/html5shiv-ed60fa31dc90ed6ac37f8b12db6d9808.js"></script>
++  <script src="https://beta-cdn1.gonebusy.com/assets/respond.min-72d496e1e7b73bb9a16f6bd6361c80fe.js"></script>
+ <![endif]-->
+   <meta name="csrf-param" content="authenticity_token" />
+-<meta name="csrf-token" content="MtEbrEmv9lO2+kVdp2u6LnR9wHYmIgGZZ3jhyW9sA9euu3ZVytbMsq5zN0/IE9XA4hVpA03wYFJSgLD3zTcgHw==" />
++<meta name="csrf-token" content="Idrsy1kKYLlLU4+cKzIJww8FAkdT/pVjsAI7E4HrE1HDCBn/bVCqiTPpmDRgMx1PZfe22J+y92/iM/APZI1Nmw==" />
+   
+     <base href="/support/">
+     <script>
+       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
++      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ 
+-      ga('create', 'UA-61437504-3', 'auto');
++      ga('create', 'UA-61437504-1', 'auto');
+       ga('send', 'pageview');
+     </script>
+ 
+@@ -37,8 +43,7 @@
+        <div class="inner-wrap">
+          <aside class="right-off-canvas-menu">
+            <ul class="off-canvas-list">
+-               <li><a href="/slack">Slack</a></li>
+-               <li><a href="/pricing">Pricing</a></li>
++               <li><a href="/platform">Platform</a></li>
+                <li><a href="https://gonebusy.github.io">Developers</a></li>
+                <li><a href="/support/getting_started/">Support</a></li>
+                <li><a title='Login' data-reveal-id='login-modal'>Login</a></li>
+@@ -56,7 +61,7 @@
+     <li><a href="/contact_us">Contact Us</a></li>
+ </div>
+ 
+-               <li><div class="off-canvas-sub-footer"><img alt="Gonebusy" src="https://sandbox-cdn3.gonebusy.com/assets/GonebusyFullLogo-inv-29394badbf30d2c7ff2ec4860e5a60ce.svg" /></div></li>
++               <li><div class="off-canvas-sub-footer"><img alt="Gonebusy" src="https://beta-cdn2.gonebusy.com/assets/GonebusyFullLogo-inv-0001fe28d1483a1e4864d933ede056a4.svg" /></div></li>
+                <li class="off-canvas-footer"><a target="_blank" href="/privacy_policy">Privacy Policy</a> | <a target="_blank" href="/terms_and_conditions">Terms &amp; Conditions</a></li>
+            </ul>
+          </aside>
+@@ -64,7 +69,7 @@
+          <nav class="top-bar hide-for-medium-up" data-topbar role="navigation">
+            <section class="left">
+              <a id="logo-box-small" class="logo-small hidetext" href="/">
+-               <img alt="Gonebusy" src="https://sandbox-cdn3.gonebusy.com/assets/GonebusyFullLogo-inv-29394badbf30d2c7ff2ec4860e5a60ce.svg" />
++               <img alt="Gonebusy" src="https://beta-cdn2.gonebusy.com/assets/GonebusyFullLogo-inv-0001fe28d1483a1e4864d933ede056a4.svg" />
+ </a>           </section>
+ 
+            <section class="middle top-bar-section hide-for-small">
+@@ -88,19 +93,18 @@
+                  <ul class="title-area">
+                    <li class="name">
+                      <a class="logo hidetext" href="/">
+-                       <img alt="Gonebusy" src="https://sandbox-cdn3.gonebusy.com/assets/GonebusyFullLogo-inv-29394badbf30d2c7ff2ec4860e5a60ce.svg" />
++                       <img alt="Gonebusy" src="https://beta-cdn2.gonebusy.com/assets/GonebusyFullLogo-inv-0001fe28d1483a1e4864d933ede056a4.svg" />
+ </a>                   </li>
+                  </ul>
+ 
+                  <section id="topNav" class="top-bar-section">
+                    <!-- Right Nav section -->
+                    <ul class="right">
+-                       <li><a href="/slack">Slack</a></li>
+-                       <li><a href="/pricing">Pricing</a></li>
++                       <li><a href="/platform">Platform</a></li>
+                        <li class= ><a href="https://gonebusy.github.io" class="clickable">Developers</a></li>
+                        <li class=active ><a class="clickable" href="/support/getting_started/">Support</a></li>
+                        <li><a title='Login' class='clickable' data-reveal-id='login-modal'>Login</a></li>
+-                       <li><a title='Get Started' class='clickable button radius' data-reveal-id='signup-modal'>Get Started</a></li>
++                       <li class="get-started"><a title='Get Started' class='clickable button radius' data-reveal-id='signup-modal'>Get Started</a></li>
+                    </ul>
+ 
+                    <!-- Left Nav section -->
+@@ -112,65 +116,69 @@
+            </div>
+          </div><!-- contain-to-grid header-->
+ 
+-         <div id='signup-modal' class='signup reveal-modal medium' data-reveal aria-labelledby="signupTitle" aria-hidden="true" role="dialog">
++         <div id='signup-modal' class='signup reveal-modal tiny' data-reveal aria-labelledby="signupTitle" aria-hidden="true" role="dialog">
+            <div class="row no-left-margin">
+   <div class="small-12 small-centered text-center columns">
+     <div class="row">
+       <div class="small-12 small-centered text-center columns titlebar">
+-        <h2 id='loginTitle'>Sign Up</h2>
+-        <h3>It's free.  It's easy.<br>Currently only for API customers.</h3>
++        <img alt="Gonebusy" src="https://beta-cdn2.gonebusy.com/assets/GonebusyGlyph-0217ae5ccfc056b8eeceb2852584f8f0.svg" />
++        <h2>Welcome to Gonebusy</h2>
++        
+       </div>
+     </div>
+     <div class="row">
+-      <div class="small-10 small-centered text-center columns">
+-        <form id="emailSignupForm" action="emailSignupForm" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="H+Y4JDk4z4hS4rxJbByWGQ4c7qNqviMImz6ZFxyVY36DjFXdukH1aUprzlsDZPn3mHRH1gFsQsOuxsgpvs5Atg==" />
+-          <input type="email" name="email" id="email" class="form-control radius" placeholder="Enter a valid email address" maxlength="60" size="20" required="required" onKeyPress="return window.fakeOutEnterKey(event)" />
++      <div class="small-12 small-centered text-center columns">
++        <form id="emailSignupForm" action="emailSignupForm" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="NAq4BxE+PzqCqR8de97VIdsQAskRVbaMtdnLbyvSsHvW2E0zJWT1CvoTCLUw38GtseK2Vt0Z1IDn6ABzzrTusQ==" />
++          <input type="email" name="email" id="email" class="form-control radius" placeholder="Enter a valid email address" maxlength="60" size="20" required="required" onKeyPress="return window.fakeOutEnterKey(event, &#39;a#mainSignupSubmit&#39;)" />
+           <input type="submit" name="commit" value="hiddenSubmit" id="hiddenSubmit" style="display:none;" />
+ </form>        <div class="base">
+           <div class="log">
+-            <a href='#' title='Continue' id="signupContinue" class="submit button radius">CONTINUE</a>
++            <a href='#' title='Continue' id="mainSignupSubmit" class="submit faked button radius" data-form="#emailSignupForm">Continue</a>
+           </div>
+         </div>
+         <div id="or-block">
+-          <span>or link an existing account</span>
++          <span>OR</span>
+         </div>
+       </div>
+-      <div class="row">
+-        <div class="small-9 medium-5 push-1 small-centered medium-uncentered text-center columns">
++      <div class="small-12 small-centered text-center columns">
+   <ul class="buttonsection">
+     <li>
+       <a class="btn btn-block btn-social btn-facebook font-btn button radius" href="/users/auth/facebook">
+-        FACEBOOK
+         <i class="fa fa-facebook line_height line-height55"></i>
++        Continue with Facebook
+ </a>    </li>
+     <li>
+       <a class="btn btn-block btn-social btn-google-plus font-btn button radius" href="/users/auth/google">
+-        GOOGLE
+         <i  class="fa fa-google font_15"></i>
++        Continue with Google
+ </a>    </li>
+   </ul>
+ </div>
+-<div class="small-9 medium-5 push-1 small-centered medium-uncentered text-center columns">
+-  <ul class="buttonsection">
+-    <li>
+-      <a class="btn btn-block btn-social btn-twitter font-btn button radius" href="/users/auth/twitter">
+-        TWITTER
+-        <i  class="fa fa-twitter"></i>
+-</a>    </li>
+-    <li>
+-      <a class="btn btn-block btn-social btn-github font-btn button radius" href="/users/auth/github">
+-        GITHUB
+-        <i  class="fa fa-github"></i>
+-</a>    </li>
+-  </ul>
+-</div>
++<dl class="accordion" data-accordion>
++  <dd class="accordion-navigation">
++    <a id="more-link" href="#more-logins" data-content="more-logins">More login options <i class="glyphicon fa fa-plus-circle"></i></a>
++    <div id="more-logins" class="small-12 small-centered text-center columns content">
++      <ul class="buttonsection">
++        <li>
++          <a class="btn btn-block btn-social btn-twitter font-btn button radius" href="/users/auth/twitter">
++          <i  class="fa fa-twitter"></i>
++          Continue with Twitter
++</a>        </li>
++        <li>
++          <a class="btn btn-block btn-social btn-github font-btn button radius" href="/users/auth/github">
++          <i  class="fa fa-github"></i>
++          Continue with GitHub
++</a>        </li>
++      </ul>
++    </div>
++  </dd>
++</dl>
+ <div class="small-12 text-center columns last">
+   <p>We never post anything anywhere without your consent.</p>
+ </div>
+ 
+-      </div>
+-      <div class="row">
+-        <span id="user-agreement">By signing up you agree to our <a target="_blank" href="/privacy_policy">Privacy Policy</a> and <a target="_blank" href="/terms_and_conditions">Terms &amp; Conditions</a></span>
++      <div class="small-12 small-centered text-center columns">
++        <span id="user-agreement">Creating an account means you agree to our <a target="_blank" href="/privacy_policy">Privacy Policy</a> and <a target="_blank" href="/terms_and_conditions">Terms &amp; Conditions</a></span>
+       </div>
+     </div>
+   </div>
+@@ -179,7 +187,7 @@
+            <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+          </div>
+ 
+-         <div id='signup-part-two-modal' class='signup reveal-modal medium' data-reveal aria-labelledby="signupTitle" aria-hidden="true" role="dialog">
++         <div id='signup-part-two-modal' class='signup reveal-modal tiny' data-reveal aria-labelledby="signupTitle" aria-hidden="true" role="dialog">
+            <div class="image-overlay-content" style="display:none;">
+   <i class="fa fa-refresh fa-spin" style="font-size:24px"></i>
+ </div>
+@@ -187,13 +195,13 @@
+   <div class="small-12 small-centered text-center columns">
+     <div class="row">
+       <div class="small-12 small-centered text-center columns titlebar">
+-        <h2 id='signupTitle'>Sign Up</h2>
++        <img alt="Gonebusy" src="https://beta-cdn2.gonebusy.com/assets/GonebusyGlyph-0217ae5ccfc056b8eeceb2852584f8f0.svg" />
+         <h3>Now choose a password.<br>You can always change it later.</h3>
+       </div>
+     </div>
+     <div class="row">
+-      <div class="small-10 small-centered text-center columns">
+-        <form id="submitSignupForm" action="/users" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="C0hFro0e9jDTfdZNa1HH2wzxBhrE9NQPDlpUDuXRvU6XIihXDmfM0cv0pF8EKag1mpmvb68mtcQ7ogUwR4qehg==" />
++      <div class="small-12 small-centered text-center columns">
++        <form id="submitSignupForm" action="/users" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="X3yYTB2aBlfYiwVK0zUg0Rwf2dB9Sz3DdeS80/rrDI69rm14KcDMZ6AxEuKYNDRddu1tT7EHX88n1XfPH41SRA==" />
+           <input class="form-control radius" size="20" readonly="readonly" type="text" name="user[email]" id="user_email" />
+           <input class="form-control radius" placeholder="Password - 8 character minimum" maxlength="50" size="20" required="required" type="password" name="user[password]" id="user_password" />
+           <div class="base">
+@@ -202,43 +210,46 @@
+             </div>
+           </div>
+ </form>        <div id="or-block">
+-          <span>or link an existing account</span>
++          <span>OR</span>
+         </div>
+       </div>
+-      <div class="row">
+-        <div class="small-9 medium-5 push-1 small-centered medium-uncentered text-center columns">
++      <div class="small-12 small-centered text-center columns">
+   <ul class="buttonsection">
+     <li>
+       <a class="btn btn-block btn-social btn-facebook font-btn button radius" href="/users/auth/facebook">
+-        FACEBOOK
+         <i class="fa fa-facebook line_height line-height55"></i>
++        Continue with Facebook
+ </a>    </li>
+     <li>
+       <a class="btn btn-block btn-social btn-google-plus font-btn button radius" href="/users/auth/google">
+-        GOOGLE
+         <i  class="fa fa-google font_15"></i>
++        Continue with Google
+ </a>    </li>
+   </ul>
+ </div>
+-<div class="small-9 medium-5 push-1 small-centered medium-uncentered text-center columns">
+-  <ul class="buttonsection">
+-    <li>
+-      <a class="btn btn-block btn-social btn-twitter font-btn button radius" href="/users/auth/twitter">
+-        TWITTER
+-        <i  class="fa fa-twitter"></i>
+-</a>    </li>
+-    <li>
+-      <a class="btn btn-block btn-social btn-github font-btn button radius" href="/users/auth/github">
+-        GITHUB
+-        <i  class="fa fa-github"></i>
+-</a>    </li>
+-  </ul>
+-</div>
++<dl class="accordion" data-accordion>
++  <dd class="accordion-navigation">
++    <a id="more-link" href="#more-logins" data-content="more-logins">More login options <i class="glyphicon fa fa-plus-circle"></i></a>
++    <div id="more-logins" class="small-12 small-centered text-center columns content">
++      <ul class="buttonsection">
++        <li>
++          <a class="btn btn-block btn-social btn-twitter font-btn button radius" href="/users/auth/twitter">
++          <i  class="fa fa-twitter"></i>
++          Continue with Twitter
++</a>        </li>
++        <li>
++          <a class="btn btn-block btn-social btn-github font-btn button radius" href="/users/auth/github">
++          <i  class="fa fa-github"></i>
++          Continue with GitHub
++</a>        </li>
++      </ul>
++    </div>
++  </dd>
++</dl>
+ <div class="small-12 text-center columns last">
+   <p>We never post anything anywhere without your consent.</p>
+ </div>
+ 
+-      </div>
+     </div>
+   </div>
+ </div>
+@@ -246,7 +257,7 @@
+            <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+          </div>
+ 
+-         <div id='login-modal' class='signup reveal-modal medium' data-reveal aria-labelledby="loginTitle" aria-hidden="true" role="dialog">
++         <div id='login-modal' class='signup reveal-modal tiny' data-reveal aria-labelledby="loginTitle" aria-hidden="true" role="dialog">
+            <div class="image-overlay-content" style="display:none;">
+   <i class="fa fa-refresh fa-spin" style="font-size:24px"></i>
+ </div>
+@@ -254,12 +265,13 @@
+   <div class="small-12 small-centered text-center columns">
+     <div class="row">
+       <div class="small-12 small-centered text-center columns titlebar">
++        <img alt="Gonebusy" src="https://beta-cdn2.gonebusy.com/assets/GonebusyGlyph-0217ae5ccfc056b8eeceb2852584f8f0.svg" />
+         <h2 id='loginTitle'>Log In</h2>
+       </div>
+     </div>
+     <div class="row">
+-      <div class="small-10 small-centered text-center columns">
+-        <form novalidate="novalidate" class="simple_form user" action="/users/sign_in" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="y6GfnxY30biYP8MkbpS5PQ39AjQYbfS8KV2NViIsJUhXy/JmlU7rWYC2sTYB7NbTm5WrQXO/lXccpdxogHcGgA==" />
++      <div class="small-12 small-centered text-center columns">
++        <form novalidate="novalidate" class="simple_form user" action="/users/sign_in" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="DF/lwHHngPXGS4vc7Pu9TxJbQ+fiTKu3XhR4m50K6azujRD0Rb1Kxb7xnHSn+qnDeKn3eC4AybsMJbOHeGy3Zg==" />
+           
+           <div class="input email required user_email"><input class="string email required form-control radius" maxlength="50" size="20" required="required" aria-required="true" placeholder="Email" type="email" name="user[email]" id="user_email" /></div>
+           <div class="input password required user_password"><input class="password required form-control radius" maxlength="50" size="20" required="required" aria-required="true" placeholder="Password - 8 character minimum" type="password" name="user[password]" id="user_password" /></div>
+@@ -273,36 +285,39 @@
+             </div>
+           </div>
+ </form>      </div>
+-    </div>
+-    <div class="row">
+-      <div class="small-9 medium-5 push-1 small-centered medium-uncentered text-center columns">
++      <div class="small-12 small-centered text-center columns">
+   <ul class="buttonsection">
+     <li>
+       <a class="btn btn-block btn-social btn-facebook font-btn button radius" href="/users/auth/facebook">
+-        FACEBOOK
+         <i class="fa fa-facebook line_height line-height55"></i>
++        Continue with Facebook
+ </a>    </li>
+     <li>
+       <a class="btn btn-block btn-social btn-google-plus font-btn button radius" href="/users/auth/google">
+-        GOOGLE
+         <i  class="fa fa-google font_15"></i>
++        Continue with Google
+ </a>    </li>
+   </ul>
+ </div>
+-<div class="small-9 medium-5 push-1 small-centered medium-uncentered text-center columns">
+-  <ul class="buttonsection">
+-    <li>
+-      <a class="btn btn-block btn-social btn-twitter font-btn button radius" href="/users/auth/twitter">
+-        TWITTER
+-        <i  class="fa fa-twitter"></i>
+-</a>    </li>
+-    <li>
+-      <a class="btn btn-block btn-social btn-github font-btn button radius" href="/users/auth/github">
+-        GITHUB
+-        <i  class="fa fa-github"></i>
+-</a>    </li>
+-  </ul>
+-</div>
++<dl class="accordion" data-accordion>
++  <dd class="accordion-navigation">
++    <a id="more-link" href="#more-logins" data-content="more-logins">More login options <i class="glyphicon fa fa-plus-circle"></i></a>
++    <div id="more-logins" class="small-12 small-centered text-center columns content">
++      <ul class="buttonsection">
++        <li>
++          <a class="btn btn-block btn-social btn-twitter font-btn button radius" href="/users/auth/twitter">
++          <i  class="fa fa-twitter"></i>
++          Continue with Twitter
++</a>        </li>
++        <li>
++          <a class="btn btn-block btn-social btn-github font-btn button radius" href="/users/auth/github">
++          <i  class="fa fa-github"></i>
++          Continue with GitHub
++</a>        </li>
++      </ul>
++    </div>
++  </dd>
++</dl>
+ <div class="small-12 text-center columns last">
+   <p>We never post anything anywhere without your consent.</p>
+ </div>
+@@ -314,7 +329,7 @@
+            <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+          </div>
+ 
+-         <div id='forgot-password-modal' class='signup reveal-modal medium' data-reveal aria-labelledby="forgotPasswordTitle" aria-hidden="true" role="dialog">
++         <div id='forgot-password-modal' class='signup reveal-modal tiny' data-reveal aria-labelledby="forgotPasswordTitle" aria-hidden="true" role="dialog">
+            <div class="image-overlay-content" style="display:none;">
+   <i class="fa fa-refresh fa-spin" style="font-size:24px"></i>
+ </div>
+@@ -322,13 +337,13 @@
+   <div class="small-12 small-centered text-center columns">
+     <div class="row">
+       <div class="small-12 small-centered text-center columns titlebar">
+-        <h2 id='forgotPasswordTitle'>Recover Your Password</h2>
++        <img alt="Gonebusy" src="https://beta-cdn2.gonebusy.com/assets/GonebusyGlyph-0217ae5ccfc056b8eeceb2852584f8f0.svg" />
+         <h3>Please enter the email associated with your account.</h3>
+       </div>
+     </div>
+     <div class="row">
+-      <div class="small-10 small-centered text-center columns last">
+-        <form novalidate="novalidate" class="simple_form user" action="/users/password" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="XOjydOHO7MImJKCiCYu8emPZ9NCae4Kj+R76XuLIDZnAgp+NYrfWIz6t0rBm89OU9bFdpfGp42jM5qtgQJMuUQ==" />
++      <div class="small-12 small-centered text-center columns last">
++        <form novalidate="novalidate" class="simple_form user" action="/users/password" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="76Qg3KPBzzycI8/b85kVW1hOjcfmh64axW3ejDBcuH4NdtXol5sFDOSZ2HO4mAHXMrw5WCrLzBaXXBWQ1TrmtA==" />
+           
+           <div class="field">
+             <div class="input email required user_email"><input class="string email required form-control radius" maxlength="50" size="20" required="required" aria-required="true" placeholder="Email" type="email" name="user[email]" id="user_email" /></div>
+@@ -389,7 +404,7 @@
+   <div class="row">
+     <div class="small-3 small-push-1 columns">
+       <a id="logo-footer" class="logo-small hidetext" href="/">
+-      <img alt="Gonebusy" src="https://sandbox-cdn3.gonebusy.com/assets/GonebusyFullLogo-inv-4e4a1d11efa1a47faaad92fee57a9627.png" />
++      <img alt="Gonebusy" src="https://beta-cdn2.gonebusy.com/assets/GonebusyFullLogo-inv-0001fe28d1483a1e4864d933ede056a4.svg" />
+ </a>      <ul class="icons">
+         <li><a class="icon" href="https://github.com/gonebusy" title="GitHub" target="_blank"><i class="fa fa-github"></i></a></li>
+         <li><a class="icon" href="https://twitter.com/gonebusy" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
+@@ -436,9 +451,23 @@
+        </div><!-- inner-wrap -->
+      </div><!-- off-canvas-wrap -->
+ 
+-     <script src="https://sandbox-cdn3.gonebusy.com/assets/application-90f01253b6582d628a0114fc16217927.js"></script>
++     <script src="https://beta-cdn1.gonebusy.com/assets/application-6898901d834478c29634678a2b69f6da.js"></script>
+      
+-     <script src="https://sandbox-cdn2.gonebusy.com/assets/support-4dcc57e29f82283073468bf364573bd4.js"></script>
+-     <script src="https://sandbox-cdn3.gonebusy.com/assets/enquire.min-227705dc86c458036ed2e008710d5dfb.js"></script>
++     <script src="https://beta-cdn2.gonebusy.com/assets/support-69cb2248d8b56f16410081f27bb60fd8.js"></script>
++     <script src="https://beta-cdn1.gonebusy.com/assets/enquire.min-ba4e160fc46dade06958ce8936fa4566.js"></script>
++
++     <!-- Stefan v0.1 START -->
++     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.min.css">
++     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.6/assets/owl.carousel.css">
++     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.6/assets/owl.theme.default.css">
++     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css">
++     <script src="//cdnjs.cloudflare.com/ajax/libs/fitvids/1.2.0/jquery.fitvids.min.js"></script>
++     <script src="//cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.min.js"></script>
++     <script src="//cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/vendor/jquery.easing.1.3.js"></script>
++     <script src="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.6/owl.carousel.js"></script>     
++     <link href="gonebusy/css/custom.css" rel="stylesheet">
++     <script src="gonebusy/js/custom.js"></script>
++     <!-- Stefan v0.1 END -->
+    </body>
+-</html>
+\ No newline at end of file
++</html>
++
