@@ -63,7 +63,7 @@
 								
 			},
 			onSliderLoad: function(currentIndex){			
-				autoPlay(currentIndex);
+				autoPlay(featuresA, currentIndex, 0);
 			}
 		});
 		mobileA.bxSlider({
@@ -92,7 +92,7 @@
 								
 			},
 			onSliderLoad: function(currentIndex){		
-				autoPlay(currentIndex);
+				autoPlay(featuresB, currentIndex, 0);
 			}
 		});
 		mobileB.bxSlider({
